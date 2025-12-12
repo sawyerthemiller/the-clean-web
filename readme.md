@@ -11,7 +11,8 @@ d. reddit - privacy mode and bring back the old ui
 a. ublock origin - use firefox or non-google browser eg brave - import the ubo file under the custom rules\
 b. stylebot - available for all browsers\
 c. stylus - needed for heavier css lifting\
-d. a monkey extension - like tampermoneky or another userscript loader
+d. a monkey extension - like tampermoneky or another userscript loader\
+e. you must install the required font 'segoe ui supro'
 
 **warnings**
 
