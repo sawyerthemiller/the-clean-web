@@ -12,3 +12,7 @@ a. ublock origin - use firefox or non-google browser eg brave - import the ubo f
 b. stylebot - available for all browsers\
 c. stylus - needed for heavier css lifting\
 d. a monkey extension - like tampermoneky or another userscript loader
+
+**warnings**
+
+a. the pandora one is made for 16:9 display - if it looks weird, you will have to modify it, it is not that hard
