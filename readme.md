@@ -8,7 +8,7 @@ d. reddit - privacy mode and bring back the old ui
 **i am sorry and want to change it but u need four extensions for most of this**\
 **the good news is that they are all relatively light on resources for the most part**
 
-a. ublock origin - use firefox or non-google browser eg brave\
+a. ublock origin - use firefox or non-google browser eg brave - import the ubo file under the custom rules\
 b. stylebot - available for all browsers\
 c. stylus - needed for heavier css lifting\
 d. a monkey extension - like tampermoneky or another userscript loader
