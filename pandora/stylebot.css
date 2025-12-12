@@ -1,0 +1,449 @@
+div.NowPlaying__centerWrapper {
+  width: 1000px;
+}
+
+input.GlobalSearchInput__input {
+  border: 1px solid white;
+  border-radius: 0px;
+}
+
+.Tuner__Audio__TrackDetail__img * {
+  border-radius: 4px;
+}
+
+div.Fillet__CTA {
+  margin-bottom: -75px;
+}
+
+div.Lyrics__divider {
+  margin-bottom: -5px
+}
+
+a.ButtonT3.ButtonT3--dark.ButtonT3--link {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.DiscoveryTunerListItem__option.DiscoveryTunerListItem__option--active {
+  border: 1px solid;
+  border-image: linear-gradient(0deg, rgba(244,238,162,1) 0%, rgba(237,222,121,1) 100%) !important;
+  border-image-slice: 1;
+}
+
+button.SourceCard__ellipsis {
+  transform: scale(0.9);
+  display: none;
+}
+
+div.AppBg {
+  filter: blur(0px);
+}
+
+div.GlobalSearchInput__inner {
+  top: 115px;
+  left: -286px;
+  opacity: 1;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+  filter: blur(0px);
+}
+
+div.GlobalSearchInput__inner:hover {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+li.NavHorizontal__item {
+  margin-top: 2px;
+  text-transform: lowercase;
+}
+
+button.ShuffleButton__button {
+  border: 1px solid;
+  border-image: linear-gradient(0deg, rgba(244,238,162,1) 0%, rgba(237,222,121,1) 100%) !important;
+  border-image-slice: 1;
+}
+
+button.ShuffleButton__button--compact--minimal {
+  border: 1px solid;
+  border-image: linear-gradient(0deg, rgba(244,238,162,1) 0%, rgba(237,222,121,1) 100%) !important;
+  border-image-slice: 1;
+}
+
+div.SourceList {
+  position: fixed;
+  left: 30px;
+  top: 100px;
+}
+
+div.SessionHistory {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+footer.Footer__content * {
+  color: black;
+  transition: color 0.2s ease;
+}
+
+footer.Footer__content:hover * {
+  color: white;
+}
+
+div.region-blueBar {
+  display: none;
+}
+
+button.ButtonT3.ButtonT3--darkTransparent {
+  border-radius: 0px;
+}
+
+.Tuner__Audio__TrackDetail__img > * > * {
+  border-radius: 0px;
+}
+
+div.SourceList {
+  width: 300px;
+}
+
+@font-face {
+  font-family: 'Segoe UI Supro';
+  src: local('Segoe UI Supro');
+}
+
+div {
+  font-family: 'Segoe UI Supro', sans-serif;
+}
+
+nav.NavPrimary {
+  margin-top: 15px;
+}
+
+nav.NavPrimary * {
+  font-size: 105%;
+}
+
+div.NowPlaying__belowFold {
+  position: relative;
+  margin-top: 400px;
+  
+}
+
+div.NowPlaying__belowFold * {
+  background-color: #fff;
+}
+
+div.NowPlaying__centerWrapper.NowPlaying__centerWrapper--withAds {
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+div.region-topBar.region-topBar--searchT3 {
+  background: linear-gradient(#003362,#002141);
+}
+
+.Nav {
+  background: transparent;
+}
+
+a.NowPlayingTopInfoSessionName__link {
+  color: white;
+}
+
+button.Avatar.Avatar--clickable {
+  transform: scale(1.35);
+  margin-right: 25px;
+}
+
+li.NavSecondary__item {
+  margin-top: -5px;
+}
+
+div.NowPlayingTopInfoSessionName {
+  position: relative;
+  top: 350px;
+  right: 770px;
+}
+
+div.Footer.Footer--nowPlaying.Footer--withTuner {
+  background-color: transparent;
+}
+
+footer.Footer__content,
+footer.Footer__content * {
+  background-color: transparent;
+}
+
+div.SourceCard {
+  position: relative;
+  bottom: 10px;
+}
+
+div.Marquee * {
+  color: white
+}
+
+a.NowPlayingTopInfo__current__artistName.NowPlayingTopInfo__current__artistName--link {
+  color: white;
+  position: relative;
+  font-size: 135%;
+  right: 0px;
+  top: 10px
+}
+
+.NowPlayingTopInfo__current__artistName.NowPlayingTopInfo__current__artistName--link::before {
+  content: "by ";
+  font-style: italic;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+a.nowPlayingTopInfo__current__albumName.nowPlayingTopInfo__current__link::before {
+  content: "on ";
+  font-style: italic;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+a.nowPlayingTopInfo__current__albumName.nowPlayingTopInfo__current__link {
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: -11px;
+  font-size: 135%;
+}
+
+div.nowPlayingTopInfo__coverGroup {
+  position: relative;
+  right: 135px;
+  transform: scale(1.85);
+  top: 150px
+}
+
+button.Button.Button--icon-wrapper * {
+  display: none;
+}
+
+h3.DiscoveryTunerHeader {
+  position: relative;
+  right: 935px;
+  color: white;
+  top: 325px;
+}
+
+ul.DiscoveryTuner__options {
+  position: relative;
+  right: 960px;
+  top: 325px
+}
+
+div.nowPlayingTopInfo__current__inner {
+  position: relative;
+  left: 285px;
+  bottom: 295px;
+  }
+
+div.nowPlayingTopInfo__current__inner * {
+  font-weight: bold;
+  font-size: 115%;
+}
+
+div.SourceList {
+  border-radius: 0px;
+}
+
+div.Marquee.Marquee--stopOnHover {
+  text-align: left;
+  height: 30px;
+  animation: none;
+  clip-path: inset(0 30% 0 0)
+}
+
+.Tuner__Audio__TrackDetail {
+  visibility: hidden;
+}
+
+div.nowPlayingTopInfo__current__sourceInfo {
+  position: relative;
+  left: 325px;
+  bottom: 275px;
+  height: 100px;
+  width: 600px;
+  text-align: left;
+  color: transparent
+}
+
+.nowPlayingTopInfo__current__inner,
+.Marquee.Marquee--stopOnHover * {
+  width: 900px;
+  animation: none;
+}
+
+.NavSecondary__logo--icon {
+  display: none;
+}
+
+button.ThumbUpButton {
+  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
+  position: relative;
+  bottom: 600px;
+  width: 145px;
+  height: 50px;
+  border: 1px solid white;
+  right: 20px;
+  transform: scale(1.15);
+}
+
+button.ThumbUpButton > * {
+  transform: scale(1.8);
+}
+
+button.ThumbDownButton {
+  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
+  position: relative;
+  bottom: 520px;
+  width: 145px;
+  height: 50px;
+  border: 1px solid white;
+  left: 260px;
+  transform: scale(1.15);
+}
+
+button.ThumbDownButton > * {
+  transform: scale(1.8);
+}
+
+button.nowPlayingTopInfo__hitArea__topLevelMenu__sessionHistory {
+ display: ;
+}
+
+div.VolumeDurationControl {
+  position: relative;
+  bottom: 783px;
+  right: 740px;
+  transform: scale(2);
+}
+
+div.VolumeSlider {
+  display: none;
+}
+
+button.VolumeDurationControl__VolumeIconContainer {
+  display: none;
+}
+
+span.Duration__Spacer {
+  margin-top: 5px;
+}
+
+button.ReplayButton > *{
+  transform: scale(1.5);
+}
+
+button.SkipButton > * {
+  transform: scale(1.3);
+}
+
+button.PlayButton {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  transform: scale(0.85);
+}
+
+button.SkipButton {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  transform: scale(0.85);
+}
+
+button.ReplayButton {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  transform: scale(0.85);
+}
+
+button.ReplayButton:hover,
+button.SkipButton:hover,
+button.PlayButton:hover {
+  background-color: black;
+}
+
+div.Badge.Badge--collected.Badge--icon {
+  display: none;
+}
+
+div.nowPlayingTopInfo__hitArea__topLevelMenu,
+div.nowPlayingTopInfo__artContainer__art {
+  margin-top: 20px;
+}
+
+button.MenuToggleButton {
+  transform: scale(1.15);
+  margin-left: 8px;
+}
+
+[src="https://i.ibb.co/Ds0tGx1/pir-1.png"] {
+  filter: opacity(0.3)
+}
+
+div.Fillet__description__summary {
+overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+button.ThumbDownButton.SessionHistory__ThumbDownButton.TunerControl {
+  display: none;
+}
+
+div.SessionHistory__trackStrip__track__buttonRow {
+  display: none;
+}
+
+a.SessionHistory__activeContent__trackName__link {
+  font-weight: bold;
+}
+
+div.DiscoveryTunerListItem__modeName {
+  color: white
+}
+
+div.Extras {
+  opacity: 0.3;
+  transition: opacity 0.2s ease-in-out;
+}
+
+div.Extras:hover {
+  opacity: 1;
+}
+
+div.ImageLoader.ImageLoader--scaling.ImageLoader--ratio_1_1:hover {
+  border: 1px solid black;
+}
+
+div.GridItem.GridItem--circle * {
+  border-radius: 0px;
+}
+
+div.BackstageRowGrid * {
+  border-radius: 0px;
+}
+
+div.TunerProgress {
+  height: 4px;
+  position: relative;
+  top: -2px
+}
+
+body div img:nth-of-type(1) {
+  z-index: -1
+}
+
+.Marquee__wrapper__content {
+  size: left for future ref
+}
