@@ -5,7 +5,7 @@ b. netflix - coming soon - bring back the old blu ray player interfaces with ano
 c. youtube - a helper script for youtube-redux to fix it's issues
 
 **i am sorry and want to change it but u need four extensions for most of this**\
-**the good news is that they are all relatively light on resources ftmp**\
+**the good news is that they are all relatively light on resources for the most part**
 
 a. ublock origin - use firefox or non-google browser eg brave\
 b. stylebot - available for all browsers\
