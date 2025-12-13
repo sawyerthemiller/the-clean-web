@@ -432,8 +432,8 @@ reddit.com##.trailing-content-container.has-trailing-content
 ! 10 Dec 2025 https://www.youtube.com
 www.youtube.com##li.vve-check.browse-list-item-container.feed-item-container:nth-of-type(7) > .feed-item-dismissable > .feed-item-no-author.feed-item-main > .feed-item-main-content > .clearfix.shelf-wrapper > .feeds-mode.yt-uix-tdl.clearfix.vve-check.yt-uix-shelfslider-at-head.yt-uix-shelfslider.shelf-item.compact-shelf > .impressive.branded-page-module-title-v2 > .branded-page-module-title-text-v2 > .link
 
-pandora.com##.nowPlayingTopInfo__current__trackName:style(font-size:25px !important;)
-pandora.com##.nowPlayingTopInfo__current__trackName .Marquee__wrapper__content:style(font-size:25px !important;)
+pandora.com##.nowPlayingTopInfo__current__trackName:style(font-size:20px !important;)
+pandora.com##.nowPlayingTopInfo__current__trackName .Marquee__wrapper__content:style(font-size:20px !important;)
 
 ! 11 Dec 2025 https://www.amazon.com
 www.amazon.com##.widgetId\=loom-desktop-inline-slot_zuma-oam-asins.widget\=zuma-oam-asins.template\=ZUMA_OAM_ASINS.slot\=MAIN.celwidget.s-widget-container-height-medium.s-spacing-medium.s-widget-container > .s-widget-padding-bottom.s-border-top-overlap.s-border-bottom.s-include-content-margin
