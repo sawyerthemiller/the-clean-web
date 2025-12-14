@@ -539,3 +539,27 @@ youtube.com##.sponsorBlockCategoryPill
 youtube.com##.sponsorThumbnailLabel
 youtube.com##.cbTitleButtonContainer
 youtube.com##.style-scope.yt-horizontal-list-renderer.arrow
+
+! 13 Dec 2025 https://macserialjunkie.com
+macserialjunkie.com###lights
+
+! 14 Dec 2025 https://www.youtube.com
+||yt3.googleusercontent.com/4ZD3HoTnJjKwn9HvPGC0wmFMFrOwhFSCqP8pqJPOBQe_L27c_YeQHupSp98uFY841DSUKCgvYXM=s88-c-k-c0x00ffffff-no-rj$image
+
+! 14 Dec 2025 https://www.amazon.com
+www.amazon.com##.nav-rufus-disco
+||m.media-amazon.com/images/I/A1JR4R9-WwL.mp4$media
+||m.media-amazon.com/images/I/51LoftB2e3L._SR3000,600_.jpg$image
+||m.media-amazon.com/images/I/71S8ThIX79L._SX3000_.jpg$image
+www.amazon.com##.pd_rd_r-00ea200d-80a9-44d0-b912-14c30c146cd1.pd_rd_w-ZfrHS.pd_rd_wg-zmsDo.desktop-gateway-atf_mission-cx-personalized-category-discovery-model-v2-single-widget_0.csm-placement-id-63dd6b15-d15b-4113-9254-0ad6f3848d8f.celwidget.gw-col
+www.amazon.com##.rhf-frame
+www.amazon.com##.gw-auto-height.gw-card-layout.gw-col.aok-relative.a-spacing-none.a-section
+www.amazon.com###pageContent > .aok-relative.a-spacing-none.a-section
+www.amazon.com###a-page > .a-spacing-none.a-section
+
+! 14 Dec 2025 https://www.ultimate-guitar.com
+||www.ultimate-guitar.com/static/public/ug/img/new_year_2026_logo.webp$image
+
+! 14 Dec 2025 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##[src="/static/public/ug/img/new_year_2026_logo.webp"]
+www.youtube.com##.st-ltod-bar > .video-extras-sparkbars > .video-extras-sparkbar-likes:style(margin-left: 3px !important;)
