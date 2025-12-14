@@ -563,3 +563,7 @@ www.amazon.com###a-page > .a-spacing-none.a-section
 ! 14 Dec 2025 https://tabs.ultimate-guitar.com
 tabs.ultimate-guitar.com##[src="/static/public/ug/img/new_year_2026_logo.webp"]
 www.youtube.com##.st-ltod-bar > .video-extras-sparkbars > .video-extras-sparkbar-likes:style(margin-left: 3px !important;)
+
+! 14 Dec 2025 https://www.youtube.com
+www.youtube.com###eow-description > span.run-text.run:nth-of-type(2)
+www.youtube.com###eow-description > a.run-link.run:nth-of-type(1)
