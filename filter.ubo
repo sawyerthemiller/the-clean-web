@@ -374,7 +374,6 @@ www.reddit.com##hr.border-neutral-border-weak.my-sm.w-100:nth-of-type(1)
 
 ! 13 Oct 2025 https://www.reddit.com
 www.reddit.com##.select-none.min-h-screen-without-header.w-full.s\:shrink.shrink-0.pt-md.mb-0.mt-0.flex-col.flex.box-border.z-2 > faceplate-tracker
-www.reddit.com##.fixed.select-none.right-20px.top-20px.z-[9999999]
 
 ! 3 Nov 2025 https://www.youtube.com
 ||yt3.ggpht.com/7hrPouLW5CYi764J4yb-urMdfZ2tF9CKWHLHfaggAzYLF-X105xCjpgnShfKSCST5GBFV8EI2BY=s88-c-k-c0x00ffffff-no-rj$image
@@ -567,3 +566,10 @@ www.youtube.com##.st-ltod-bar > .video-extras-sparkbars > .video-extras-sparkbar
 ! 14 Dec 2025 https://www.youtube.com
 www.youtube.com###eow-description > span.run-text.run:nth-of-type(2)
 www.youtube.com###eow-description > a.run-link.run:nth-of-type(1)
+
+! 14 Dec 2025 https://direct.playstation.com
+||direct.playstation.com/psd-libs/am/resources/images/icons/klarna_logo.png$image
+
+! 14 Dec 2025 https://stremio-neo.aayushcodes.eu
+stremio-neo.aayushcodes.eu##.meta-row-container-xtlB1.animation-fade-in.board-row-square-pgaZ3.board-row-CoJrZ
+stremio-neo.aayushcodes.eu##div.meta-row-container-xtlB1.animation-fade-in.board-row-poster-QPQqC.board-row-CoJrZ:nth-of-type(7)
