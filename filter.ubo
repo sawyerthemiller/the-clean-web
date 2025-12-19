@@ -581,3 +581,20 @@ www.youtube.com##span.run-text.run:nth-of-type(3)
 
 ! 16 Dec 2025 https://mcraft.fun
 mcraft.fun##label > input
+
+! 18 Dec 2025 https://alldebrid.com
+alldebrid.com###balloon
+alldebrid.com##div.footer_trick:nth-of-type(3)
+alldebrid.com##.copyright
+||cdn.alldebrid.com/lib/images/default/ui/toolbar/logo_facebook.png$image
+alldebrid.com##a.lienjaune:nth-of-type(9)
+alldebrid.com##.footer_title_trick
+
+! 18 Dec 2025 https://stremio-neo.aayushcodes.eu
+stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(5)
+stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(4) > .info-container-AdMB6 > .description-container-v7Jhe
+stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(2) > .info-container-AdMB6 > .description-container-v7Jhe
+stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(1) > .info-container-AdMB6 > .description-container-v7Jhe
+||torrentio.strem.fun/images/logo_v1.png$image
+||stremio-neo.aayushcodes.eu/undefined$image
+stremio-neo.aayushcodes.eu##.modal-dialog-background-vZpB_
