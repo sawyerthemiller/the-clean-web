@@ -250,12 +250,14 @@
         }
 
         /* shrink the share icon wrapper */
+        button[aria-label="Clip"] .ytIconWrapperHost,
         button[aria-label="Share"] .ytIconWrapperHost {
             width: 20px !important;
             height: 20px !important;
         }
 
         /* shrink the actual 24x24 svg inside */
+        button[aria-label="Clip"] svg,
         button[aria-label="Share"] svg {
             width: 20px !important;
             height: 20px !important;
