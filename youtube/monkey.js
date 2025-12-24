@@ -265,3 +265,69 @@
     `;
     document.head.appendChild(style);
 })();
+(function() {
+    'use strict';
+
+    function applyTweaks() {
+        // --- TASK 1: Move Meatball Menu after Share ---
+        const menuRenderer = document.querySelector('ytd-menu-renderer.ytd-watch-metadata');
+        if (menuRenderer) {
+            const meatballMenu = menuRenderer.querySelector('yt-button-shape#button-shape');
+            const shareBtnInner = menuRenderer.querySelector('button[aria-label="Share"]');
+
+            if (meatballMenu && shareBtnInner) {
+                const shareBtnContainer = shareBtnInner.closest('yt-button-view-model');
+                // Move only if not already in position
+                if (shareBtnContainer && shareBtnContainer.nextElementSibling !== meatballMenu) {
+                    shareBtnContainer.parentNode.insertBefore(meatballMenu, shareBtnContainer.nextSibling);
+                }
+            }
+
+            // --- TASK 2: Fix Save Button Icon Margin ---
+            const saveBtnInner = menuRenderer.querySelector('button[aria-label="Save to playlist"]');
+            if (saveBtnInner) {
+                const saveIcon = saveBtnInner.querySelector('.yt-spec-button-shape-next__icon');
+                if (saveIcon) {
+                    saveIcon.style.marginRight = '4px';
+                }
+            }
+        }
+
+        // --- TASK 3: Move Sidebar 4px to the Right ---
+        const secondaryColumn = document.getElementById('secondary');
+        if (secondaryColumn) {
+            secondaryColumn.style.marginLeft = '5px';
+        }
+
+        // --- TASK 4: Hide Download Button ---
+        // We hide the standard main bar button AND the menu item renderer
+        const downloadSelectors = [
+            'ytd-download-button-renderer', // Main bar button
+            'ytd-menu-service-item-download-renderer', // The menu item wrapper
+            '.ytd-menu-service-item-download-renderer' // Fallback for the class in your snippet
+        ];
+
+        downloadSelectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(el => {
+                if (el.style.display !== 'none') {
+                    el.style.display = 'none';
+                }
+            });
+        });
+    }
+
+    // Observer to handle dynamic loading
+    const observer = new MutationObserver((mutations) => {
+        applyTweaks();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+    // Initial run
+    applyTweaks();
+
+})();
