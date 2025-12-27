@@ -16,4 +16,4 @@ e. you must install the required font 'segoe ui supro'
 
 **warnings**
 
-a. the pandora one is made for 16:9 display - if it looks weird, you will have to modify it, it is not that hard
+a. the pandora one is getting better, now has selector for display ratio to properly position elements on the big screen :)
