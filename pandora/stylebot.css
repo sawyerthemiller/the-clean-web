@@ -1,5 +1,6 @@
 div.NowPlaying__centerWrapper {
   width: 1000px;
+  background-color: transparent;
 }
 
 input.GlobalSearchInput__input {
@@ -317,10 +318,8 @@ button.nowPlayingTopInfo__hitArea__topLevelMenu__sessionHistory {
 }
 
 div.VolumeDurationControl {
-  position: relative;
-  bottom: 783px;
-  right: 740px;
   transform: scale(2);
+  margin-left: -95px;
 }
 
 div.VolumeSlider {
@@ -384,7 +383,7 @@ div.nowPlayingTopInfo__artContainer__art {
 
 button.MenuToggleButton {
   transform: scale(1.15);
-  margin-left: 8px;
+  margin-left: 11px;
 }
 
 [src="https://i.ibb.co/Ds0tGx1/pir-1.png"] {
@@ -444,6 +443,19 @@ body div img:nth-of-type(1) {
   z-index: -1
 }
 
-.Marquee__wrapper__content {
-  size: left for future ref
+div.ArtistEvents.ArtistEvents--nowPlaying * {
+  border-radius: 0px;
+}
+
+div.RowItemDate.RowItemDate--small.RowItemDate--dark {
+  border: 2px solid black;
+  border-bottom: 0px;
+}
+
+div.Modal__container {
+  display: none;
+}
+
+div.nowPlayingTopInfo__trackLoader {
+  margin-top: 20px;
 }
