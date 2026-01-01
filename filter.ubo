@@ -614,3 +614,19 @@ www.msoe.edu##.secondary_nav_lg.secondary_nav > .secondary_nav_list > div.second
 my.msoe.edu###pg2_CustomContentPortlet > .portlet-header-bar > h3 > [href^="/ICS/Portal_Homepage.jnz"]
 ||macserialjunkie.com/*/snowstorm-min.js$script
 
+! 29 Dec 2025 https://www.reddit.com
+www.reddit.com##.end-xs.bottom-0.absolute > faceplate-tracker > .inline-flex.button.justify-center.items-center.icon.button-secondary.px-\[var\(--rem6\)\].button-small
+
+! 30 Dec 2025 https://www.reddit.com
+www.reddit.com##[href="https://discord.gg/P9CQYtGj3Q"]
+
+! 30 Dec 2025 https://www.amazon.com
+www.amazon.com##.a-spacing-none.a-carousel-transition-slide.a-carousel-display-stretchygoodness.a-carousel-static.a-carousel-container.a-begin > .a-carousel-row.a-carousel-controls.a-row > .a-carousel-row-inner > .a-carousel-center.a-carousel-col > .a-carousel-viewport > .a-carousel
+www.amazon.com###corePriceDisplay_desktop_feature_div
+www.amazon.com##._universal-hero-quick-promo_style_desktopSection__gKOeL.a-spacing-none.a-section > .a-fixed-left-grid > .a-fixed-left-grid-inner
+
+! 30 Dec 2025 https://www.reddit.com
+www.reddit.com##.text-12.font-semibold.text-global-admin
+
+! 31 Dec 2025 https://www.reddit.com
+www.reddit.com##.p-xs.rounded-\[8px\].mb-xs.bg-neutral-background-weak
