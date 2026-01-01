@@ -538,7 +538,15 @@ youtube.com##.sponsorBlockCategoryPill
 youtube.com##.sponsorThumbnailLabel
 youtube.com##.cbTitleButtonContainer
 youtube.com##.style-scope.yt-horizontal-list-renderer.arrow
+psxhax.com###fc-whitelist-iframe
+psxhax.com##.fc-whitelist-dialog
+psxhax.com##iframe[src="https://fundingchoicesmessages.google.com/s/whitelist?hl=en-US"]
+psxhax.com##.fc-ab-dialog.fc-dialog
+en.wikipedia.org##.frb.frb-nag.frb-rml-enabled.frb-annual-enabled.frb-country-US
 ||gstatic.com/youtube/img/watch/social_media/apple_music_1x.png
+en.wikipedia.org##.vector-sitenotice-container
+en.wikipedia.org###frb-inline
+en.wikipedia.org##.frb.frb-rml-enabled.frb-annual-enabled.frb-country-US
 
 ! 13 Dec 2025 https://macserialjunkie.com
 macserialjunkie.com###lights
