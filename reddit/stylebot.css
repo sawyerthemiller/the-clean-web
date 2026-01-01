@@ -145,3 +145,42 @@ reddit-header-large reddit-search-large[home-revamp-enabled]:defined:not(:focus-
 reddit-header-large reddit-search-large[show-ask-button]:defined:not(:focus-within)::after {
   background: none !important;
 }
+
+svg.text-category-nsfw {
+  margin-left: -7px;
+  margin-bottom: 3px;
+}
+
+a.font-bold.text-neutral-content-strong.text-12,
+p.m-0.text-14.text-neutral-content-weak.font-semibold,
+div.flex.items-center.gap-2xs {
+  opacity: 0.1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a.font-bold.text-neutral-content-strong.text-12:hover,
+p.m-0.text-14.text-neutral-content-weak.font-semibold:hover,
+div.flex.items-center.gap-2xs:hover {
+  opacity: 1;
+}
+
+#profile-feed-tabgroup > * {
+  border-radius: 0px;
+}
+
+.relative.overflow-hidden.w-full {
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+}
+
+img.h-full.w-full.absolute.top-0.rounded-full {
+  border-radius: 50%;
+}
+
+div.right-sidebar > * > * > * {
+  border-radius: 0px;
+}
+
+div.right-sidebar.min-w-0.w-full.xs:w-[316px].xs:max-w-[316px].pb-xl.xs:pb-0.block {
+  
+}
