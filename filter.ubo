@@ -638,3 +638,8 @@ www.reddit.com##.text-12.font-semibold.text-global-admin
 
 ! 31 Dec 2025 https://www.reddit.com
 www.reddit.com##.p-xs.rounded-\[8px\].mb-xs.bg-neutral-background-weak
+
+! 1 Jan 2026 https://chatgpt.com
+chatgpt.com##a.gap-1\.5.hoverable.__menu-item.group:nth-of-type(2)
+chatgpt.com##.__menu-item-badge
+
