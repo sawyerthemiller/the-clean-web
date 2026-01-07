@@ -16,4 +16,4 @@ e. you must install the required font 'segoe ui supro'
 
 **warnings**
 
-a. the pandora one is getting better, now has selector for display ratio to properly position elements on the big screen :)
+a. the pandora one is now fully resizable so will probably no longer get updates due to relatively stable pandora DOM :)
