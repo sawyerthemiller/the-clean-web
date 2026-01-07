@@ -643,3 +643,12 @@ www.reddit.com##.p-xs.rounded-\[8px\].mb-xs.bg-neutral-background-weak
 chatgpt.com##a.gap-1\.5.hoverable.__menu-item.group:nth-of-type(2)
 chatgpt.com##.__menu-item-badge
 
+! 3 Jan 2026 https://athome.fandango.com
+athome.fandango.com##.carouselAd__container--gsO0b
+athome.fandango.com##div:nth-of-type(1) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(8) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(8) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .page-section.nr-mt-undefined.nr-mb-40.col-xs-12.sb-b2
+athome.fandango.com##.nr-page-header > div
+athome.fandango.com##div:nth-of-type(5) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##.downloadIcons__itunes--VwHK4
+athome.fandango.com##div.pageFooter__innerIconContainer--xh5ud:nth-of-type(2) > .pageFooter__downloadIcon--ux8X7
