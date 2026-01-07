@@ -23,6 +23,17 @@ div.Lyrics__divider {
 a.ButtonT3.ButtonT3--dark.ButtonT3--link {
   margin-bottom: 10px;
   border: 1px solid black;
+  text-transform: lowercase;
+  transition: transform 0.2s ease;
+}
+
+a.ButtonT3.ButtonT3--dark.ButtonT3--link * {
+  position: relative;
+  top: -2px
+}
+
+a.ButtonT3.ButtonT3--dark.ButtonT3--link:hover {
+  transform: scale(1.025);
 }
 
 .DiscoveryTunerListItem__option.DiscoveryTunerListItem__option--active {
@@ -283,40 +294,6 @@ div.nowPlayingTopInfo__current__sourceInfo {
   display: none;
 }
 
-button.ThumbUpButton {
-  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
-  position: relative;
-  bottom: 600px;
-  width: 145px;
-  height: 50px;
-  border: 1px solid white;
-  right: 20px;
-  transform: scale(1.15);
-}
-
-button.ThumbUpButton > * {
-  transform: scale(1.8);
-}
-
-button.ThumbDownButton {
-  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
-  position: relative;
-  bottom: 520px;
-  width: 145px;
-  height: 50px;
-  border: 1px solid white;
-  left: 260px;
-  transform: scale(1.15);
-}
-
-button.ThumbDownButton > * {
-  transform: scale(1.8);
-}
-
-button.nowPlayingTopInfo__hitArea__topLevelMenu__sessionHistory {
- display: ;
-}
-
 div.VolumeDurationControl {
   transform: scale(2);
   margin-left: -95px;
@@ -396,12 +373,34 @@ overflow: hidden;
   white-space: nowrap;
 }
 
-button.ThumbDownButton.SessionHistory__ThumbDownButton.TunerControl {
-  display: none;
+button.ThumbUpButton {
+  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
+  position: relative;
+  bottom: 595px;
+  width: 145px;
+  height: 50px;
+  border: 1px solid white;
+  right: 20px;
+  transform: scale(1.15);
 }
 
-div.SessionHistory__trackStrip__track__buttonRow {
-  display: none;
+button.ThumbUpButton > * {
+  transform: scale(1.8);
+}
+
+button.ThumbDownButton {
+  background: linear-gradient(to bottom, #3a6eff 0%, #1e4ed8 100%);
+  position: relative;
+  bottom: 520px;
+  width: 145px;
+  height: 50px;
+  border: 1px solid white;
+  left: 260px;
+  transform: scale(1.15);
+}
+
+button.ThumbDownButton > * {
+  transform: scale(1.8);
 }
 
 a.SessionHistory__activeContent__trackName__link {
@@ -458,4 +457,41 @@ div.Modal__container {
 
 div.nowPlayingTopInfo__trackLoader {
   margin-top: 20px;
+}
+
+div.DiscoveryTuner.DiscoveryTuner--dark.DiscoveryTuner--modesClosed * {
+  border-radius: 0px;
+}
+
+[aria-label="Play"] * {
+  position: relative;
+  left: 0px;
+}
+
+.DiscoveryTunerListItem__option--active .DiscoveryTunerListItem__modeName {
+  color: black;
+}
+
+div.SessionHistory__trackStrip__track__art {
+  position: relative;
+  bottom: 0px;
+  border: 1px solid black;
+}
+
+div.SessionHistory__trackStrip__track__buttonRow {
+  display: none;
+}
+
+div.SessionHistory__activeContent {
+  position: relative;
+  margin-left: -40px;
+}
+
+div.SessionHistory__trackStrip__track__artCover {
+  margin-top: 1px;
+}
+
+a.DropdownOption__item,
+ul.DropdownBox {
+  border-radius: 0px;
 }
