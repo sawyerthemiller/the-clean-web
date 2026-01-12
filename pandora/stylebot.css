@@ -1,3 +1,4 @@
+
 div.NowPlaying__centerWrapper {
   width: 1000px;
   background-color: transparent;
@@ -25,6 +26,10 @@ a.ButtonT3.ButtonT3--dark.ButtonT3--link {
   border: 1px solid black;
   text-transform: lowercase;
   transition: transform 0.2s ease;
+}
+
+a.ButtonT3.ButtonT3--dark.ButtonT3--link > * {
+  color: black;
 }
 
 a.ButtonT3.ButtonT3--dark.ButtonT3--link * {
