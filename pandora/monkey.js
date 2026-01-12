@@ -1,4 +1,5 @@
 // ==UserScript==
+//
 // @name         Pandora VIA
 // @namespace    http://leopardindustries.net
 // @version      1.6
@@ -6,6 +7,7 @@
 // @match        https://www.pandora.com/*
 // @grant        none
 // @icon         https://images.icon-icons.com/17/PNG/256/Pandora_1992.png
+//
 // ==/UserScript==
 
 (function () {
@@ -385,7 +387,6 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         // - ThumbsUp: 10px below Album Name
         // - ThumbsDown: 10px below ThumbsUp
         // - Menu: 10px below ThumbsDown
-        // - Do NOT touch horizontal alignment (User CSS handles left/right)
 
         const albumEl = document.querySelector('.nowPlayingTopInfo__current__albumName');
         const thumbsUpEl = document.querySelector('.ThumbUpButton');
@@ -469,4 +470,35 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
 
     // fallback: check every second in case the element changes
     setInterval(fixAlbumName, 1000);
+})();
+
+// --- FIX THE PLAY ICON SVG BEING OFF CENTER WHEN PAUSED ---
+(function () {
+    'use strict';
+
+    const TARGET_PATH_D = 'M3.75 22.5v-21l16.5 10.521z';
+
+    function updatePlayButtons() {
+        document.querySelectorAll('button[data-qa="play_button"] svg').forEach(svg => {
+            const path = svg.querySelector('path');
+            if (!path) return;
+
+            if (path.getAttribute('d') === TARGET_PATH_D) {
+                svg.style.transform = 'translateX(2px)';
+            } else {
+                svg.style.transform = '';
+            }
+        });
+    }
+
+    // Initial run
+    updatePlayButtons();
+
+    // Watch for dynamic changes
+    const observer = new MutationObserver(updatePlayButtons);
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true
+    });
 })();
