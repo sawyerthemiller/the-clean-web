@@ -296,7 +296,7 @@
         // --- TASK 3: Move Sidebar 4px to the Right ---
         const secondaryColumn = document.getElementById('secondary');
         if (secondaryColumn) {
-            secondaryColumn.style.marginLeft = '5px';
+            secondaryColumn.style.marginLeft = '7px';
         }
 
         // --- TASK 4: Hide Download Button ---
