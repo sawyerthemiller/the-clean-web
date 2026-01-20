@@ -180,7 +180,3 @@ img.h-full.w-full.absolute.top-0.rounded-full {
 div.right-sidebar > * > * > * {
   border-radius: 0px;
 }
-
-div.right-sidebar.min-w-0.w-full.xs:w-[316px].xs:max-w-[316px].pb-xl.xs:pb-0.block {
-  
-}
