@@ -64,3 +64,50 @@
     });
 
 })();
+
+(function () {
+  function fix(root) {
+    root.querySelectorAll?.('input[placeholder], textarea[placeholder]').forEach(el => {
+      el.placeholder = ' ';
+    });
+  }
+
+  function walk(node) {
+    if (!node) return;
+
+    if (node.shadowRoot) {
+      fix(node.shadowRoot);
+      walk(node.shadowRoot);
+    }
+
+    node.childNodes?.forEach(walk);
+  }
+
+  const mo = new MutationObserver(() => walk(document.body));
+  mo.observe(document.documentElement, { childList: true, subtree: true });
+
+  document.addEventListener('DOMContentLoaded', () => walk(document.body));
+})();
+
+(function() {
+    'use strict';
+
+    const faviconURL = "https://files.softicons.com/download/social-media-icons/free-social-media-icons-by-uiconstock/ico/Reddit-Icon.ico";
+
+    function changeFavicon(url) {
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement("link");
+            link.rel = "icon";
+            document.head.appendChild(link);
+        }
+        link.href = url;
+    }
+
+    // Wait for DOM to be ready
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        changeFavicon(faviconURL);
+    } else {
+        document.addEventListener("DOMContentLoaded", () => changeFavicon(faviconURL));
+    }
+})();
