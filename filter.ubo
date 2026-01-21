@@ -693,3 +693,33 @@ athome.fandango.com##div:nth-of-type(16) > .uxPage__uxPageRow--zRM20 > .nr-m-0.r
 athome.fandango.com##div:nth-of-type(16) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .page-section.nr-mt-undefined.nr-mb-40.col-xs-12.sb-b2
 athome.fandango.com##div:nth-of-type(12) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
 athome.fandango.com##div:nth-of-type(12) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .page-section.nr-mt-undefined.nr-mb-40.col-xs-12.sb-b2
+
+! 20 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com/courses/22953##p:nth-of-type(4)
+msoe.instructure.com/courses/22953##h3:nth-of-type(2)
+msoe.instructure.com###context_external_tool_3360_menu_item > .ic-app-header__menu-list-link
+msoe.instructure.com###global_nav_help_link
+
+! 20 Jan 2026 https://chatgpt.com
+chatgpt.com##.pt-2.gap-3\.5.flex-col.flex.mb-2
+
+! 20 Jan 2026 https://www.reddit.com
+www.reddit.com##faceplate-tracker > .text-secondary.leading-4.rounded-5.px-\[6px\].box-border.align-text-bottom.font-normal.text-12.max-w-full.truncate.inline-block.bg-tone-4 > .text-ellipsis.whitespace-nowrap.overflow-hidden.max-w-full.\[\&_\.flair-image\]\:align-bottom.flair-content > .\[--emote-size\:20px\].text-ellipsis.whitespace-nowrap.overflow-hidden.max-w-full
+
+! 20 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com##div.ic-DashboardCard:nth-of-type(5)
+msoe.instructure.com##div.ic-DashboardCard:nth-of-type(6)
+msoe.instructure.com##div.ic-DashboardCard:nth-of-type(8) > .ic-DashboardCard__header > .ic-DashboardCard__link > .ic-DashboardCard__header_content > .ellipsis.ic-DashboardCard__header-subtitle
+msoe.instructure.com##.ColorPicker__Container
+msoe.instructure.com##.css-8oqz18-view--block-avatar
+||msoe.instructure.com/courses/22953/files/3259582/preview$image
+msoe.instructure.com##tr:nth-of-type(2) > .percent
+msoe.instructure.com##tr:nth-of-type(5) > .percent
+msoe.instructure.com##tr:nth-of-type(4) > .percent
+
+! 20 Jan 2026 https://macosicons.com
+macosicons.com##._coral-StatusLight.m-t-32.status-alert-info
+macosicons.com##.announcement-top-banner
+macosicons.com##.coral-card.mobile-hidden.card-hover.card-wrapper.sticky-banner
+macosicons.com##._coral-StatusLight._coral-StatusLight--info.coral-status
+
