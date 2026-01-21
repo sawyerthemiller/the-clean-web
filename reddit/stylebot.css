@@ -180,3 +180,16 @@ img.h-full.w-full.absolute.top-0.rounded-full {
 div.right-sidebar > * > * > * {
   border-radius: 0px;
 }
+
+* {
+  font-family: 'Segoe UI Supro';
+}
+
+h1.text-neutral-content-strong.m-0 {
+  height: 30px;
+  margin-top: 4px;
+}
+
+a.relative.pointer-events-auto.a.cursor-pointer.underline {
+  text-decoration-line: none;
+}
