@@ -712,7 +712,6 @@ msoe.instructure.com##.css-8oqz18-view--block-avatar
 ||msoe.instructure.com/courses/22953/files/3259582/preview$image
 msoe.instructure.com##tr:nth-of-type(2) > .percent
 msoe.instructure.com##tr:nth-of-type(5) > .percent
-msoe.instructure.com##tr:nth-of-type(4) > .percent
 
 ! 20 Jan 2026 https://macosicons.com
 macosicons.com##._coral-StatusLight.m-t-32.status-alert-info
@@ -731,3 +730,18 @@ msoe.instructure.com##li.checked.hover-container.context_list_context:nth-of-typ
 msoe.instructure.com##li.checked.hover-container.context_list_context:nth-of-type(10)
 msoe.instructure.com##li.checked.hover-container.context_list_context:nth-of-type(2)
 msoe.instructure.com##.vertical.bottom.center.ui-widget-content.ui-corner-all.ui-widget.ui-tooltip
+
+! 21 Jan 2026 https://my.msoe.edu
+my.msoe.edu###pg2_CustomContentPortlet > .portlet-header-bar > .portlet-help-wrapper > .help.btn-no-bg-hover-color-content-one.btn > .glyphicons-question-sign.glyphicons
+
+! 21 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com/grades##tr:nth-of-type(5)
+msoe.instructure.com/grades##tr:nth-of-type(1)
+msoe.instructure.com/grades##tr:nth-of-type(2)
+msoe.instructure.com/grades##tr:nth-of-type(4) > .percent
+msoe.instructure.com/grades##div.ic-Layout-contentMain h2:style(margin-left: 24px !important)
+msoe.instructure.com##.submitted.profile_pic_link.avatar.fs-exclude
+msoe.instructure.com##[href^="https://myaccount.google.com/"] > [src^="blob:https://msoe.instructure.com/"]
+msoe.instructure.com###unregistered_service_diigo
+msoe.instructure.com##.evalkit-badge.nav-badge
+
