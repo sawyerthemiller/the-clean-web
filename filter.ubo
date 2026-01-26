@@ -892,3 +892,18 @@ www.nytimes.com##.css-sx232s.verticalVideo.layoutVertical.sizeMedium > .css-1xb9
 www.nytimes.com##.css-sx232s.verticalVideo.layoutVertical.sizeMedium > .css-1xb94ky > nyt-betamax
 www.nytimes.com##nyt-betamax-overlay-controls
 www.nytimes.com##nyt-betamax
+
+! 25 Jan 2026 https://www.youtube.com
+||i1.ytimg.com/vi/yPC7zr-CiOk/movieposter.jpg$image
+
+! 26 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com/courses##.file_download_btn > span > svg
+
+! 26 Jan 2026 https://scholar.google.com
+scholar.google.com###gs_hp_ap
+
+! 26 Jan 2026 https://www.vaporhatch.com
+www.vaporhatch.com##.agp__rowInner
+www.vaporhatch.com##.agp__background--color.agp__background
+www.vaporhatch.com##.agp__background--image.agp__background
+www.vaporhatch.com##.agp__container
