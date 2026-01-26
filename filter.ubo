@@ -857,3 +857,38 @@ www.whitehouse.gov##.fade-in.wp-block-group-is-layout-constrained.wp-container-c
 whitehouse.gov##div[style*="z-index: 70000"]
 ||www.whitehouse.gov/wp-content/uploads/2026/01/Wide_Border-Security1.mp4$media
 www.whitehouse.gov##.wp-block-whitehouse-footer__updates
+
+! 25 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com##li.not-checked.hover-container.context_list_context:nth-of-type(11)
+
+! 25 Jan 2026 https://www.mitchellairport.com
+www.mitchellairport.com##.modal-content
+www.mitchellairport.com##.in.fade.modal-backdrop
+www.mitchellairport.com##.in.fade.modal
+
+! 25 Jan 2026 https://www.google.com
+www.google.com/travel##.gb_1.gb_0a.gb_B
+www.google.com/travel##.VCBeVe > div > .VfPpkd-xl07Ob-XxIAqe-OWXEXe-oYxtQd > div
+www.google.com/travel##.gb_4d.gb_Sd.gb_wb.gb_2d
+www.google.com/travel##.iIo4pd.OTelKf.nJawce.LQeN7.AjY5Oe.nCP5yc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe > .VfPpkd-vQzf8d
+
+! 25 Jan 2026 https://www.reddit.com
+www.reddit.com##.fill-current.text-global-brand-orangered.bottom-0.left-0.absolute > path
+
+||i.ytimg.com/vi/qPV-X2E6S8I/maxresdefault.jpg
+||i.ytimg.com/vi_webp/FK1x_VDK2a0/maxresdefault.webp
+##button.ytp-suggested-action-badge-dismiss-button-icon
+
+! 25 Jan 2026 https://www.nytimes.com
+www.nytimes.com###masthead-bar-one-widgets
+||static01.nyt.com/images/2026/01/25/opinion/25klein/25klein-smallSquare252.jpg?format=pjpg&quality=75&auto=webp&disable=upscale$image
+www.nytimes.com##.css-ijf8eq > .css-r6z5ec > nyt-betamax-overlay-controls
+www.nytimes.com##.css-ijf8eq > .css-r6z5ec
+www.nytimes.com##.css-gvnats.cinemagraph_video
+www.nytimes.com##div.e1ppw5w20.css-1w1paqe:nth-of-type(1)
+www.nytimes.com##.css-1lvvmm > .e17qa79g0.css-1l10c03 > .e1yccyp20.css-eyfo4n > .css-1lvvmm > .e17qa79g0.css-1e7omub > .css-hurk9l.container-margin > .css-9mylee > div > .css-1p5yz2j > .css-1yg7u8y
+www.nytimes.com##.svelte-1jdk9hp.video-grid-container
+www.nytimes.com##.css-sx232s.verticalVideo.layoutVertical.sizeMedium > .css-1xb94ky > nyt-betamax > nyt-betamax-overlay-controls
+www.nytimes.com##.css-sx232s.verticalVideo.layoutVertical.sizeMedium > .css-1xb94ky > nyt-betamax
+www.nytimes.com##nyt-betamax-overlay-controls
+www.nytimes.com##nyt-betamax
