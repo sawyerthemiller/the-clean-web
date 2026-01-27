@@ -107,8 +107,6 @@ www.youtube.com##li.context-data-item.related-list-item.video-list-item:nth-of-t
 www.youtube.com##li.context-data-item.related-list-item.video-list-item:nth-of-type(2) > .yt-uix-sessionlink.yt-uix-contextlink.related-video > .view-count.stat > .value
 
 ! 4 Aug 2025 https://chatgpt.com
-
-! 4 Aug 2025 https://chatgpt.com
 chatgpt.com###radix-«R2jaqpqkl4mj5»
 
 ! 4 Aug 2025 https://www.google.com
@@ -154,7 +152,6 @@ translate.google.com##.HQQHBe > div > span > .ZihNHd.mN1ivc.eT1oJ.yHy1rc.VfPpkd-
 ! 13 Aug 2025 https://www.pornhub.com
 www.pornhub.com##.abAlertInner
 
-
 ! Make the older theme work on Google
 ##.KM9vFe.IAktu.jVwmLb
 ##.gb_Rd
@@ -183,8 +180,6 @@ www.pornhub.com##.abAlertInner
 ##a.tX9u1b[href*="www.google.com/travel"]
 ##a.tX9u1b[href*="www.blogger.com"]
 
-! 14 Aug 2025 https://www.google.com
-
 ! 14 Aug 2025 https://play.google.com
 ||play-lh.googleusercontent.com/tHhp99TaGpTXRopCjuT_LMbsKty2v1bmoPjGa8u40xeExeSDts8Eriqg0_gvvjtzYOw=s*$image
 ||play-lh.googleusercontent.com/fDBd_7VJmbeVSqfWP4J4ERMkyWKXMj42DLzejnXZCiWVZKmvZuDBAGHuI_7m5krJ0Kw=s*$image
@@ -209,8 +204,6 @@ docs.google.com##.javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__to
 docs.google.com##.appsElementsSidekickEntryPointMorphSpark.appsElementsSidekickEntryPointMorphContainer
 docs.google.com##.materialdesignWizIconSvgsSvgIcon.appsElementsSidekickEntryPointIcon
 docs.google.com##.appsElementsSidekickEntryPointRoot
-
-! 15 Aug 2025 https://drive.google.com
 
 ! 15 Aug 2025 https://play.google.com
 play.google.com##c-wiz > .ftgkle > .YMlj6b > .bewvKb > .b0ZfVe.aoJE7e
@@ -246,8 +239,6 @@ drive.google.com##.L3Yhxc-obM74b.B-ZB7aWe-UvFRu
 drive.google.com##.B-Nd-ZB7aWe-UvFRu
 
 ! 16 Aug 2025 https://mail.google.com
-
-! 16 Aug 2025 https://mail.google.com
 mail.google.com##div.Q3:nth-of-type(1)
 mail.google.com##div.Q3:nth-of-type(2)
 mail.google.com##div.nH:nth-of-type(10)
@@ -273,8 +264,6 @@ drive.google.com##li.PhN5Gf:nth-of-type(2)
 youtube.com##div[aria-label="Subtitles/CC"]
 youtube.com##.ytp-chapter-marker:style(margin-bottom: -2px !important;)
 ##span.pYTkkf-Bz112c-kBDsod-Rtc0Jf
-
-! 18 Aug 2025 https://mail.google.com
 
 ! 18 Aug 2025 https://chat.google.com
 chat.google.com##.Qb1ood.fqMOM
@@ -323,8 +312,6 @@ spotidownloader.com##div.is-visible.LazyLoad:nth-of-type(2)
 ||spotidownloader.com/static/phone_album_copylink3.jpg$image
 ||spotidownloader.com/static/phone_album_copylink1.jpg$image
 ||spotidownloader.com/static/blog/1.png$image
-
-! 23 Sept 2025 https://www.streameast.ga
 
 ! 23 Sept 2025 https://www.streameast.ga
 www.streameast.ga##.nav-mainlink > span:nth-of-type(2)
