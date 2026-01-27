@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name         YT Redux Improver
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Fix YouTube Redux Layout Issues
+// @version      1.1
+// @description  Do what they won't
 // @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
 
+/* ==========================================================================
+   PART 1: Move Subscriptions to Top
+   ========================================================================== */
 (function () {
     'use strict';
 
@@ -45,7 +48,6 @@
     (async () => {
         let sections = null;
         let desiredIndex = null; // once set, we will keep Subscriptions at this index
-        let subscriptionsNodeId = null; // use weak id reference (we can't rely on stable element identity across replacements, but we can find by text)
         let debounceTimer = null;
 
         function doEnsurePosition() {
@@ -54,13 +56,12 @@
             const find = findSubscriptionsChild(sections);
             if (!find) return; // can't find subscriptions right now
 
-            const { node: subNode, index: currentIndex, children } = find;
+            const { node: subNode, index: currentIndex } = find;
 
             // If it's already at the desired index, do nothing.
             if (currentIndex === desiredIndex) return;
 
             // Attempt to move it *to* the desiredIndex.
-            // Note: after inserting, the node will be located at 'desiredIndex' unless other mutations race.
             const newIndex = placeNodeAtIndex(sections, subNode, desiredIndex);
             console.log(`[Tampermonkey] Adjusted "Subscriptions" from index ${currentIndex} -> ${newIndex}`);
         }
@@ -155,7 +156,7 @@
             if (desiredIndex !== null) doEnsurePosition();
         }, 3000);
 
-        // Cleanup on page unload (not strictly necessary but tidy)
+        // Cleanup on page unload
         window.addEventListener('beforeunload', () => {
             try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) {}
             try { if (bodyObserver) bodyObserver.disconnect(); } catch (e) {}
@@ -163,13 +164,16 @@
         });
     })();
 })();
+
+/* ==========================================================================
+   PART 2: Square Corners CSS
+   ========================================================================== */
 (function() {
     'use strict';
 
     // Inject CSS that overrides YouTube's rounded corners
     const style = document.createElement('style');
     style.textContent = `
-        
         yt-flexible-actions-view-model a.yt-spec-button-shape-next,
         yt-flexible-actions-view-model .yt-spec-button-shape-next__button,
         yt-flexible-actions-view-model .yt-spec-button-shape-next__outline,
@@ -208,10 +212,13 @@
         .ytThumbnailViewModelImage img {
         background: #000 !important;
         }
-
     `;
     document.head.appendChild(style);
 })();
+
+/* ==========================================================================
+   PART 3: Remove Shorts
+   ========================================================================== */
 (function () {
     'use strict';
 
@@ -238,6 +245,10 @@
     const obs = new MutationObserver(removeShorts);
     obs.observe(document.body, { childList: true, subtree: true });
 })();
+
+/* ==========================================================================
+   PART 4: Icon Tweaks
+   ========================================================================== */
 (function () {
     'use strict';
 
@@ -265,6 +276,10 @@
     `;
     document.head.appendChild(style);
 })();
+
+/* ==========================================================================
+   PART 5: General UI Tweaks (Meatball, Download, Save, REMOVE ADS)
+   ========================================================================== */
 (function() {
     'use strict';
 
@@ -300,11 +315,10 @@
         }
 
         // --- TASK 4: Hide Download Button ---
-        // We hide the standard main bar button AND the menu item renderer
         const downloadSelectors = [
             'ytd-download-button-renderer', // Main bar button
             'ytd-menu-service-item-download-renderer', // The menu item wrapper
-            '.ytd-menu-service-item-download-renderer' // Fallback for the class in your snippet
+            '.ytd-menu-service-item-download-renderer'
         ];
 
         downloadSelectors.forEach(selector => {
@@ -314,6 +328,19 @@
                     el.style.display = 'none';
                 }
             });
+        });
+
+        // --- TASK 5: Hide "Remove ads" Button ---
+        // We look for the standard view model item containing the specific text
+        const items = document.querySelectorAll('yt-list-item-view-model');
+        items.forEach(item => {
+            // Check if it's already hidden to save performance
+            if (item.style.display === 'none') return;
+
+            // Check if the text content matches "Remove ads"
+            if (item.textContent.trim().includes('Remove ads')) {
+                item.style.display = 'none';
+            }
         });
     }
 
