@@ -962,3 +962,10 @@ people.com###sidebar-overlay-lightbox-552257cf-653e-4758-a947-9b74b721ef49-17695
 
 ! 27 Jan 2026 https://www.netflix.com
 www.netflix.com##div.default-ltr-iqcdef-cache-1npqywr:nth-of-type(5)
+
+! 27 Jan 2026 https://e621.net
+e621.net##section.home-section:nth-of-type(3)
+
+! 27 Jan 2026 https://tools.usps.com
+tools.usps.com##.col-sm-12.col-lg-8.col-xl-9
+tools.usps.com##.global-footer--social
