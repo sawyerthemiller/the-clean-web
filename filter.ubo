@@ -957,3 +957,9 @@ www.bing.com/search###tm-wallpaper-manager > div
 www.bing.com##.composer_wrapper
 www.bing.com##.vs_bs_credit
 www.bing.com###id_rfob > .rms_img
+www.bing.com##li.b_algo > .b_tpcn > .tilk > .tpic
+www.bing.com##.b_imgcap_main > .b_tpcn > .tilk > .tpic
+www.bing.com##.b_inline_ajax_rs > .rsExplr > ul
+www.bing.com##.b_inline_ajax_rs
+www.bing.com##.sb_similar_tween
+www.bing.com##.b_divdef.wiki_attr > span
