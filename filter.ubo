@@ -969,3 +969,35 @@ e621.net##section.home-section:nth-of-type(3)
 ! 27 Jan 2026 https://tools.usps.com
 tools.usps.com##.col-sm-12.col-lg-8.col-xl-9
 tools.usps.com##.global-footer--social
+
+! 27 Jan 2026 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##a.h5KPm.w95q9.ClX4D.ooNE6.fiB3E.cTzGe.OetHI.ru_9u.aPN9d.u4jSw.Q_TBK:nth-of-type(6)
+
+! 27 Jan 2026 https://www.nytimes.com
+www.nytimes.com##.desktop.tablet.smartphone > div > .e1ppw5w20.css-hocbjh
+
+! 27 Jan 2026 https://www.bing.com
+||storage.live.com/users/0x1387e3808c176439/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1&ex=720&sid=3F3F7BB433A96DB50EE56D5A32F66CAE&fofoff=1$image
+
+! 27 Jan 2026 https://thebulletin.org
+||thebulletin.org/wp-content/uploads/2025/01/doomsday-clock-89-seconds-r.png$image
+thebulletin.org##.desktop-logo > svg
+||thebulletin.org/wp-content/uploads/20*/01/*oomsday*lock*.png$image
+
+! 28 Jan 2026 https://imgupscaler.com
+imgupscaler.com##.dark\:text-white.dark\:bg-neutral-600.duration-300.transition.text-center.py-2.focus\:bg-gray-200.focus\:outline-none.bg-gray-100.block.group
+
+! 28 Jan 2026 https://www.bing.com
+www.bing.com##.b_vfly_dh.b_vfly
+
+! 28 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com##.css-0
+
+! 28 Jan 2026 https://www.bing.com
+www.bing.com###sa_5015 > .sa_sg_icon_area > .cico > .sa_ent_img
+www.bing.com###sa_5015 > .sa_sg_icon_area
+www.bing.com##.hp_top_cover
+www.bing.com###id_p
+www.bing.com###trending_now_tile
+www.bing.com##.five_col.show.carousel
+www.bing.com##.feed_bg.five_col.show.module
