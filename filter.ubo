@@ -1019,3 +1019,5 @@ athome.fandango.com##li:nth-of-type(7)
 
 ! 29 Jan 2026 http://leopardindustries.net
 leopardindustries.net##footer
+
+teams.microsoft.com##div[role="group"][data-inp="banner-notification"]
