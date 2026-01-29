@@ -998,3 +998,24 @@ www.bing.com###id_p
 www.bing.com###trending_now_tile
 www.bing.com##.five_col.show.carousel
 www.bing.com##.feed_bg.five_col.show.module
+
+! 29 Jan 2026 https://msoe.instructure.com
+msoe.instructure.com##button.tox-tbtn--select.tox-tbtn:nth-of-type(3) > .tox-tbtn__icon-wrap.tox-icon > svg
+
+! 29 Jan 2026 https://athome.fandango.com
+athome.fandango.com##div:nth-of-type(29) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(29) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(25) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(25) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(21) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(21) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(17) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(17) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(13) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(13) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(9) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row > .nr-p-0.col-xs-12
+athome.fandango.com##div:nth-of-type(9) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##li:nth-of-type(7)
+
+! 29 Jan 2026 http://leopardindustries.net
+leopardindustries.net##footer
