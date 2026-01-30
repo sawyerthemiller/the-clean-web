@@ -759,7 +759,7 @@ www.youtube.com##.player-height.yt-scrollbar-dark.yt-scrollbar-wide.yt-scrollbar
 www.youtube.com##.slider-buttons
 www.youtube.com###eow-description > .run-text.run
 
-www.netflix.com##div.default-ltr-iqcdef-cache-gpipej:nth-of-type(3) > div.default-ltr-iqcdef-cache-1npqywr:nth-of-type(4)
+!! www.netflix.com##div.default-ltr-iqcdef-cache-gpipej:nth-of-type(3) > div.default-ltr-iqcdef-cache-1npqywr:nth-of-type(4)
 
 ! 21 Jan 2026 https://www.curseforge.com
 www.curseforge.com##.link-btn-icon.premium-button-container.btn-secondary.link-btn
@@ -1049,3 +1049,6 @@ localhost##h2:nth-of-type(1)
 localhost##li:nth-of-type(5)
 localhost##body > p
 localhost##small.copyright > em
+
+! 29 Jan 2026 https://mail.google.com
+mail.google.com##.gU.oc
