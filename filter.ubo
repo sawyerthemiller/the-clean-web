@@ -759,8 +759,6 @@ www.youtube.com##.player-height.yt-scrollbar-dark.yt-scrollbar-wide.yt-scrollbar
 www.youtube.com##.slider-buttons
 www.youtube.com###eow-description > .run-text.run
 
-!! www.netflix.com##div.default-ltr-iqcdef-cache-gpipej:nth-of-type(3) > div.default-ltr-iqcdef-cache-1npqywr:nth-of-type(4)
-
 ! 21 Jan 2026 https://www.curseforge.com
 www.curseforge.com##.link-btn-icon.premium-button-container.btn-secondary.link-btn
 
@@ -1052,3 +1050,21 @@ localhost##small.copyright > em
 
 ! 29 Jan 2026 https://mail.google.com
 mail.google.com##.gU.oc
+
+! 30 Jan 2026 https://open.spotify.com
+open.spotify.com##.Box-sc-8t9c76-0.T9JaL14g0fwnpw83.efnFkI.e-91000-Box-sc-8t9c76-0.e-91000-box--min-size.e-91000-box--padding-custom.e-91000-box--browser-default-focus.e-91000-box--naked.e-91000-baseline.e-91000-box > .TJKQw.Areas__HeaderArea-sc-8gfrea-3
+open.spotify.com##.va5STnBzPqkIqnaT
+open.spotify.com##._2WOtop0TLUrNXAd.uvcTYGvrsVEujQSN.dxlv5wfAu8zgm7HY > .uaz8OXg5s48bHAYm
+open.spotify.com##.Re09zcWMhYTXRj0s
+open.spotify.com##.Llk1ve1sjOIOuoPP.Shelf.sLPknsJcp6wULKli.ovJXBDQa8ZsE4nc_
+open.spotify.com##div.iCKNKM.sc-jsJBEP > svg
+open.spotify.com##.AdQSALznIQQQCT4l.fWHCnIZLtjosK_LG
+open.spotify.com##.HL6H5w_OkDsfRykg.uvcTYGvrsVEujQSN.dxlv5wfAu8zgm7HY > .uaz8OXg5s48bHAYm
+open.spotify.com##.jHqD4CkJSTwpZihD
+open.spotify.com##.P1a_MNB6ZEIu50sz.ppsr9k1cXo055Z3t.B3B0XuueQy4Swpyw
+open.spotify.com##.qy8cKKS5c5Y24cTG.ax9CMxA763c25wSn
+open.spotify.com##.OIKulRJjkhI7tabq.ax9CMxA763c25wSn
+open.spotify.com##.lhB5KQbFP8BJIgvI.ax9CMxA763c25wSn
+open.spotify.com##.bFukgmYgnN0iUcDc.KPaqkditE0X7pDpE.D3IIJJzBZAs85pbQ.e-91000-button-tertiary--condensed.e-91000-button-tertiary--icon-only.e-91000-overflow-wrap-anywhere.iBjBCb.Button-sc-1dqy6lx-0
+open.spotify.com##.QZayATnxXUWYcMJo.mkxU7yK3S6E71zxQ
+open.spotify.com##.e-91000-button--leading.e-91000-button--small.e-91000-overflow-wrap-anywhere.encore-text-body-small-bold.dzIYeQ.Button-sc-1dqy6lx-0
