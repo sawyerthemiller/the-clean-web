@@ -786,8 +786,6 @@ msoe.instructure.com###message-body-root_statusbar
 127.0.0.1##p > em
 127.0.0.1##img
 127.0.0.1##[href] > em
-
-127.0.0.1##[href="https://www.flickr.com/photos/imagelink/4006753760/in/photolist-774Eio-8gRapj-cAJvWQ-8Z6NkM-djKy-7aT4jN-8DcQaP-5vQG7X-emi7PE-7Q1yCB-7HbCEt-oV2d2h-5PJQah-g1KQ9p-g1KZ7p-g1KHa3-g1KxNh-nvyPib-mmC6T-mCq3b-dDNWKm-f9Wm2i-mddy73-7k7X8-ryQc-nU1mcr-5V6Ag-9qF2ta-b8BHgT-63f7WV-bYUxhf-8mJRjn-g1KXpN-g1KNQJ-jTKn7M-g1EDcJ-6SZEqS-g1L4mK-gwmN7H-4NuKWv-gwmAC2-6akRDL-gwmFi5-25QEaP-6twbbX-hokLfQ-g1Ljrp-g1L3vt-g1Le9R-4d7yyL"]
 127.0.0.1##i
 
 ! 22 Jan 2026 https://www.wqusability.com
@@ -1038,3 +1036,16 @@ teams.live.com##.f6juhto.f1orqat1.ffbvwxd.f1lvywb8.fokr779.___j6zhb00.r2oyxsj.fu
 ! 29 Jan 2026 https://www.nitrotype.com
 www.nitrotype.com##.swoop--hero--bottom.home--swoop--bottom
 www.nitrotype.com##.swoop--hero.home--swoop
+
+! 29 Jan 2026 https://real-debrid.com
+||fcdn.real-debrid.com/0831/images/gift_box_icon.png$image
+
+! 29 Jan 2026 https://www.reddit.com
+www.reddit.com##shreddit-loading
+
+! 29 Jan 2026 http://localhost:8000 ! FOR READABLE APP ONLY DELETE IF YOU DON'T USE READABLE
+localhost##ul:nth-of-type(1)
+localhost##h2:nth-of-type(1)
+localhost##li:nth-of-type(5)
+localhost##body > p
+localhost##small.copyright > em
