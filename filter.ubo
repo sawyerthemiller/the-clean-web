@@ -1070,3 +1070,25 @@ open.spotify.com##.QZayATnxXUWYcMJo.mkxU7yK3S6E71zxQ
 open.spotify.com##.e-91000-button--leading.e-91000-button--small.e-91000-overflow-wrap-anywhere.encore-text-body-small-bold.dzIYeQ.Button-sc-1dqy6lx-0
 open.spotify.com##.UF4iFZpYucsei5By.ax9CMxA763c25wSn
 open.spotify.com##.quUmMvjSqAvrNZTu
+
+! 30 Jan 2026 https://www.thesun.ie
+||nu-sun-helios-assets.s3.eu-west-1.amazonaws.com/experiments/SunClubIrelandLogoWithDots.png$image
+www.thesun.ie##.paywall.zephr-paywall
+
+! 31 Jan 2026 https://my.zerotier.com
+my.zerotier.com##thead > tr > td:nth-of-type(1)
+my.zerotier.com##.justify-center.items-center.flex-wrap.flex.bg-light-yellow
+my.zerotier.com##thead > tr > td:nth-of-type(9)
+my.zerotier.com##thead > tr > td:nth-of-type(5)
+my.zerotier.com##thead > tr > td:nth-of-type(3)
+my.zerotier.com##thead > tr > td:nth-of-type(4)
+my.zerotier.com##thead > tr > td:nth-of-type(6)
+my.zerotier.com##thead > tr > td:nth-of-type(7)
+my.zerotier.com##thead > tr > td:nth-of-type(8)
+
+! 31 Jan 2026 https://www.amazon.com
+www.amazon.com##._YXJje_viewStripeContentJS_1BWTX._YXJje_viewStripeContent_2c9dp
+www.amazon.com##.a-text-bold.a-padding-none.a-size-medium
+www.amazon.com##.maple-banner
+www.amazon.com##.pd_rd_wg-XouWn.pd_rd_r-E1J52FJGVAN0N9Z5XT7S.pd_rd_w-5De5m.celwidget
+www.amazon.com##.celwidget.a-spacing-base.a-section
