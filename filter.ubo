@@ -1092,3 +1092,36 @@ www.amazon.com##.a-text-bold.a-padding-none.a-size-medium
 www.amazon.com##.maple-banner
 www.amazon.com##.pd_rd_wg-XouWn.pd_rd_r-E1J52FJGVAN0N9Z5XT7S.pd_rd_w-5De5m.celwidget
 www.amazon.com##.celwidget.a-spacing-base.a-section
+
+! 1 Feb 2026 https://hfs.leopardindustries.net
+||hfs.leopardindustries.net/~/admin/hfs-logo.svg$image
+hfs.leopardindustries.net##div.css-16m9afj.MuiBox-root:nth-of-type(3)
+hfs.leopardindustries.net##a.css-1xlhpzt.MuiLink-underlineAlways.MuiLink-root.MuiTypography-inherit.MuiTypography-root:nth-of-type(3)
+
+! 1 Feb 2026 https://aio.leopardindustries.net
+aio.leopardindustries.net##li:nth-of-type(3) > .relative.sm\:gap-3.gap-2.flex.border.rounded-\[--radius-md\].bg-\[var\(--background\)\].py-2.px-2\.5 > .sm\:gap-2.gap-1.items-center.flex > button.md\:w-10.md\:h-10.w-8.h-8.rounded-full.text-2xl.flex-none.p-0.UI-IconButton_root.dark\:hover\:bg-opacity-20.dark\:bg-opacity-10.active\:bg-brand-200.hover\:bg-brand-100.border-transparent.bg-brand-50.border.text-\[--brand\].shadow-none.disabled\:pointer-events-none.disabled\:opacity-50.focus-visible\:ring-\[--ring\].ring-offset-\[--background\].ring-offset-1.focus-visible\:ring-2.focus-visible\:outline-none.justify-center.text-center.ease-in.transition.items-center.inline-flex.font-semibold.whitespace-nowrap.UI-Button_root:nth-of-type(1)
+
+! 2 Feb 2026 https://www.justice.gov
+www.justice.gov##.block_full_width.bg-primary-lightest.bg-full-width.block-inline-blockgeneral.block-layout-builder.block-general.block
+
+! 4 Feb 2026 https://www.linkedin.com
+www.linkedin.com##._2f804ccf._9ba217da._76686a19._3516cfdf
+
+! 5 Feb 2026 https://miro.com
+miro.com##.c-hvDiEk.c-kEULaH.c-sIqSY-cPqCsK-size-medium.c-sIqSY-jtqqDp-variant-secondary.c-sIqSY.c-IMxRw
+miro.com##.c-gsZlNx-ifdaPF-type-INFO.c-gsZlNx-knmidH-contentPosition-left.c-gsZlNx.c-dhzjXW-jroWjL-align-center.c-dhzjXW
+miro.com##.c-jewaKj-gDjfkg-type-Default.c-jewaKj
+miro.com##.c-cmpvrW
+miro.com##.c-PJLV.c-dFZnDw-ibLdNGJ-css.c-dFZnDw-eAZiQz-variant-neutral.c-dFZnDw
+miro.com##.c-sIqSY-iPJLV-css.c-sIqSY-cPqCsK-size-medium.c-sIqSY-kdRZRF-variant-primary.c-sIqSY.c-IMxRw
+miro.com##.c-gAfckO.c-lesPJm
+
+! 6 Feb 2026 https://www.bing.com
+www.bing.com##.b_results_eml
+www.bing.com##.product-card-container
+
+! 9 Feb 2026 https://www.bing.com
+www.bing.com##.b_poleContent
+
+! 9 Feb 2026 https://www.pandora.com
+www.pandora.com##.Initialization_failure_error
