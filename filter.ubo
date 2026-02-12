@@ -1125,3 +1125,45 @@ www.bing.com##.b_poleContent
 
 ! 9 Feb 2026 https://www.pandora.com
 www.pandora.com##.Initialization_failure_error
+
+! 9 Feb 2026 https://boardmix.com
+boardmix.com##.global-banner
+
+! 9 Feb 2026 https://msoe.instructure.com
+msoe.instructure.com###MenuItem__label___2 > .css-erowh2-view--inlineBlock-img
+
+! 10 Feb 2026 https://flat.io
+flat.io###tr-6786931d5206b346a34ed163 > .privacy__SXjD > div > .ScoreStatus_dDjZE > .scoreCollaborators_ba_4R
+
+! 10 Feb 2026 https://msoe.instructure.com
+msoe.instructure.com##.file_download_btn > span:nth-of-type(1)
+
+! 11 Feb 2026 https://oldstampcollecting.com
+oldstampcollecting.com###menu-home-main > .menu-item-12.menu-item-has-children.menu-item-home.menu-item-object-custom.menu-item-type-custom.menu-item > .sub-menu
+
+! 11 Feb 2026 https://commons.wikimedia.org
+commons.wikimedia.org##span.stockphoto_buttonrow
+commons.wikimedia.org##.cbnnr-container
+
+! 11 Feb 2026 https://drive.google.com
+drive.google.com##.VfPpkd-ksKsZd-mWPk3d.VfPpkd-ksKsZd-mWPk3d-Qu-Tv8l5d-lJfZMc.VfPpkd-ksKsZd-XxIAqe.vf9sSe.FDSlxb
+drive.google.com##li.jbArdc.RCmsv.Wp3BKe.ia8caf:nth-of-type(5)
+drive.google.com##li.jbArdc.RCmsv.Wp3BKe.ia8caf:nth-of-type(6)
+drive.google.com##li.jbArdc.RCmsv.Wp3BKe.ia8caf:nth-of-type(14)
+
+! 11 Feb 2026 https://dzen.ru
+dzen.ru##.lwnw-gquchznh-ccnklljdp-hagpan.avqgtfjhm-ndzeebk-nerpjksr
+dzen.ru##.dzen-desktop--content-app__contentWrapper-1c
+
+! 11 Feb 2026 https://athome.fandango.com
+athome.fandango.com##div:nth-of-type(4) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(8) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(12) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(16) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(20) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(24) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+athome.fandango.com##div:nth-of-type(28) > .uxPage__uxPageRow--zRM20 > .nr-m-0.row
+
+! 11 Feb 2026 https://www.reddit.com
+www.reddit.com##div.text-neutral-content-weak.px-md > [href="https://discord.com/invite/windows-os-hub-rebrand-tbd-911521135420637244"]
+
