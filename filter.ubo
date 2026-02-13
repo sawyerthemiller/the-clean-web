@@ -1167,3 +1167,11 @@ athome.fandango.com##div:nth-of-type(28) > .uxPage__uxPageRow--zRM20 > .nr-m-0.r
 ! 11 Feb 2026 https://www.reddit.com
 www.reddit.com##div.text-neutral-content-weak.px-md > [href="https://discord.com/invite/windows-os-hub-rebrand-tbd-911521135420637244"]
 
+! 12 Feb 2026 https://www.airbnb.com
+www.airbnb.com###search-block-tab-EXPERIENCES > .dir-ltr.dir.atm_mk_h2mmj6.w14w6ssu > .dir-ltr.dir.atm_tk_f0llp1.b512q93.atm_l8_16deowv__2ygr2h.atm_vb_glywfm.atm_tw_wq6zvn.atm_mk_stnw88.atm_l8_84jpoz.atm_fq_1osqo2v.atm_c8_ftgil2.atm_9s_1o8liyq.atm_73_usvi9m.atm_70_1akgpp0.atm_26_1um2y4w.atm_5j_1pabvb2.bd8bnzg
+www.airbnb.com###search-block-tab-SERVICES > .dir-ltr.dir.atm_mk_h2mmj6.w14w6ssu > .dir-ltr.dir.atm_tk_f0llp1.b512q93.atm_l8_16deowv__2ygr2h.atm_vb_glywfm.atm_tw_wq6zvn.atm_mk_stnw88.atm_l8_84jpoz.atm_fq_1osqo2v.atm_c8_ftgil2.atm_9s_1o8liyq.atm_73_usvi9m.atm_70_1akgpp0.atm_26_1um2y4w.atm_5j_1pabvb2.bd8bnzg
+www.airbnb.com##div.gmnoprint > .gm-style-cc > div
+www.airbnb.com##button.gm-style-cc > div
+www.airbnb.com##.gm-style-cc.gmnoprint > div
+www.airbnb.com##.gm-style > div > div > div.gm-style-cc > div
+www.airbnb.com##img[src*="c3c390ab-d1ab-4627-9cd7-608ac53b171e.png"]
