@@ -1175,3 +1175,31 @@ www.airbnb.com##button.gm-style-cc > div
 www.airbnb.com##.gm-style-cc.gmnoprint > div
 www.airbnb.com##.gm-style > div > div > div.gm-style-cc > div
 www.airbnb.com##img[src*="c3c390ab-d1ab-4627-9cd7-608ac53b171e.png"]
+
+! 13 Feb 2026 https://dzen.ru
+dzen.ru##.mini-suggest__popup-extra
+dzen.ru##.b784ccbca
+
+! 13 Feb 2026 https://www.makeuseof.com
+www.makeuseof.com##.w-promotion-widget.promo-articlecontent3\/4depth.w-promotion-offer > .promotion-offer-box
+www.makeuseof.com##.an-zone-d.an-injector-zone.an-can-change.an-zone-sidebar-first.an-zone.adsninja-ad-zone
+www.makeuseof.com##.i-sensa.icon
+
+! 14 Feb 2026 https://discord.com
+discord.com##.padded_bf1984.outer_bf1984.card__2eab1
+
+! 14 Feb 2026 https://e621.net
+e621.net##.footer-version
+
+! 15 Feb 2026 https://www.nytimes.com
+||vp.nyt.com/video/2026/02/10/161270_1_00Trav-Vegas-Lounge-Singers-73472_wg_mobile_720p.mp4$media
+
+! 15 Feb 2026 https://cyberspace.online
+cyberspace.online##.shadow-lg.rounded.pb-5.pt-4.px-6.text-fg.border-fg.border-2.bg-bg.version-toast
+
+! 15 Feb 2026 https://www.etsy.com
+www.etsy.com##.wt-justify-content-flex-end.wt-position-relative.wt-flex-direction-column-xs.wt-display-flex-xs.shoppable-hero-page__item--primary-gradient.shoppable-hero-page__item--primary.shoppable-hero-page__item.wt-card--contained.wt-card > .wt-card__action-link
+www.etsy.com##.wt-justify-content-flex-end.wt-position-relative.wt-flex-direction-column-xs.wt-display-flex-xs.shoppable-hero-page__item--primary-gradient.shoppable-hero-page__item--primary.shoppable-hero-page__item.wt-card--contained.wt-card
+
+! 15 Feb 2026 https://github.com
+github.com##.js-notice.BorderGrid-row > .BorderGrid-cell
