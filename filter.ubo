@@ -1203,3 +1203,17 @@ www.etsy.com##.wt-justify-content-flex-end.wt-position-relative.wt-flex-directio
 
 ! 15 Feb 2026 https://github.com
 github.com##.js-notice.BorderGrid-row > .BorderGrid-cell
+
+! 15 Feb 2026 https://claude.ai
+claude.ai##.border-accent-secondary-100\/50.bg-accent-secondary-900.text-accent-secondary-000.max-w-\[16\.6rem\].shadow-sm.border-0\.5.p-4.rounded-xl.z-tooltip.fixed.font-base
+claude.ai##.opacity-1.duration-500.transition
+claude.ai##.justify-center.items-center.flex.shadow-sm.border-0\.5.border-border-300.bg-bg-000.shrink-0
+claude.ai##.select-none.text-text-500.bg-bg-300.sm\:font-base.font-small.text-center.px-2\.5.h-8.rounded-lg.gap-1\.5.items-center.inline-flex.ml-0\.5
+
+! 15 Feb 2026 https://x.com
+x.com##.gt2-trends.r-ttdzmv.r-vacyoi.css-175oi2r
+x.com##div.css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu
+x.com##.gt2-toggle-navbar-dropdown
+x.com##.r-nsbfu8.r-dnmrzs.css-175oi2r
+x.com##.r-l0gwng.r-4d76ec.css-175oi2r > .r-1udh08x.r-1adg3ll.css-175oi2r > .r-13qz1uu.r-ipm5af.r-u8s1d.r-1d2f490.r-1pi2tsx.r-1p0dtai > .r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490.r-1p0dtai.r-agouwx.r-gf0ln.r-n1ft60.r-aqfbo4.r-417010.r-1udh08x.r-1mlwlqe.css-175oi2r > .css-9pa8cd
+x.com##.r-l0gwng.r-4d76ec.css-175oi2r > .r-1udh08x.r-1adg3ll.css-175oi2r > .r-13qz1uu.r-ipm5af.r-u8s1d.r-1d2f490.r-1pi2tsx.r-1p0dtai > .r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490.r-1p0dtai.r-agouwx.r-gf0ln.r-n1ft60.r-aqfbo4.r-417010.r-1udh08x.r-1mlwlqe.css-175oi2r > .r-4gszlv.r-1wyyakw.r-13qz1uu.r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490.r-1pi2tsx.r-1p0dtai.r-u6sd8q.r-vvn4in.r-1niwhzg.css-175oi2r
