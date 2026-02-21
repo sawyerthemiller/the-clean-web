@@ -1305,3 +1305,13 @@ www.imdb.com##.gap-xs.items-center.flex > .ipc-avatar--baseAlt.ipc-avatar > .w-\
 ! 21 Feb 2026 https://chatgpt.com
 chatgpt.com##.max-sm\:hidden.sm\:justify-center.sm\:flex-wrap.sm\:flex.gap-3.justify-items-center.grid-cols-1.grid.mt-\[24\.5px\]
 chatgpt.com###cgpt-lazy-btn
+
+! 21 Feb 2026 https://www.tomsguide.com
+www.tomsguide.com##.exit-intent__background.exit-intent
+www.tomsguide.com###signupForm
+
+! 21 Feb 2026 https://techrechard.com
+techrechard.com##.onesignal-slidedown-dialog
+||techrechard.com/wp-content/uploads/2022/06/youtube*.jpg$image
+
+github.com##.Diff-module__diffHeaderWrapper__VTI5w::before
