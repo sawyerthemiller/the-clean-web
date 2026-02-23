@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YT Redux Improver
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  do what they won't...
 // @match        https://www.youtube.com/*
 // @grant        none
@@ -16,7 +16,7 @@
     // Helpers
     const findSectionsContainer = () => document.querySelector('#sections');
 
-    // forgiving search for the subscriptions child: looks for the word "subscriptions" anywhere inside
+    // Forgiving search for the subscriptions child: looks for the word "subscriptions" anywhere inside
     function findSubscriptionsChild(container) {
         const children = Array.from(container.children || []);
         for (let i = 0; i < children.length; i++) {
@@ -28,7 +28,7 @@
         return null;
     }
 
-    // place node at index 'idx' inside container (0-based). If idx >= length, appends.
+    // Place node at index 'idx' inside container
     function placeNodeAtIndex(container, node, idx) {
         const children = Array.from(container.children || []);
         if (idx <= 0) {
@@ -44,7 +44,7 @@
         return idx;
     }
 
-    // Main logic: initial move once, then keep at desiredIndex
+    // Main logic - initial move once, then keep at desiredIndex
     (async () => {
         let sections = null;
         let desiredIndex = null; // once set, we will keep Subscriptions at this index
@@ -66,7 +66,7 @@
             console.log(`[Tampermonkey] Adjusted "Subscriptions" from index ${currentIndex} -> ${newIndex}`);
         }
 
-        // When we detect mutations, we debounce and then either perform initial move or ensure locked position.
+        // When we detect mutations, we debounce and then either perform initial move or ensure locked position
         function onMutations() {
             if (debounceTimer) clearTimeout(debounceTimer);
             debounceTimer = setTimeout(() => {
@@ -131,7 +131,7 @@
                     const newSec = findSectionsContainer();
                     if (newSec && newSec !== sections) {
                         // rebind
-                        try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) {}
+                        try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) { }
                         sectionsObserver = bindObserverToSections(newSec);
                         console.log('[Tampermonkey] Rebound observer to new #sections element.');
                         onMutations();
@@ -158,8 +158,8 @@
 
         // Cleanup on page unload
         window.addEventListener('beforeunload', () => {
-            try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) {}
-            try { if (bodyObserver) bodyObserver.disconnect(); } catch (e) {}
+            try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) { }
+            try { if (bodyObserver) bodyObserver.disconnect(); } catch (e) { }
             clearInterval(ensureInterval);
         });
     })();
@@ -168,7 +168,7 @@
 /* ==========================================================================
    PART 2: Square Corners CSS
    ========================================================================== */
-(function() {
+(function () {
     'use strict';
 
     // Inject CSS that overrides YouTube's rounded corners
@@ -198,6 +198,10 @@
         span.yt-icon-shape.ytSpecIconShapeHost,
         div.yt-spec-button-shape-next__icon {
             color: white;
+        }
+
+        #ticket-shelf {
+            display: none !important;
         }
 
         .yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--enable-backdrop-filter-experiment {
@@ -276,7 +280,7 @@
 /* ==========================================================================
    PART 5: General UI Tweaks (Meatball, Download, Save, REMOVE ADS)
    ========================================================================== */
-(function() {
+(function () {
     'use strict';
 
     function applyTweaks() {
@@ -327,7 +331,6 @@
         });
 
         // --- TASK 5: Hide "Remove ads" Button ---
-        // We look for the standard view model item containing the specific text
         const items = document.querySelectorAll('yt-list-item-view-model');
         items.forEach(item => {
             // Check if it's already hidden to save performance
@@ -355,31 +358,69 @@
 
 })();
 
+/* ==========================================================================
+   PART 6: Force Full Reload on Video Change
+   ========================================================================== */
 (function () {
     'use strict';
 
-    // stop youtube SPA navigation
+    // Track the current video ID so we can detect changes
+    function getVideoId(url) {
+        try {
+            const u = new URL(url, location.origin);
+            return u.searchParams.get('v');
+        } catch (_) {
+            return null;
+        }
+    }
+
+    let lastVideoId = getVideoId(location.href);
+
+    function reloadIfChanged(newUrl) {
+        const newId = getVideoId(newUrl);
+        if (newId && newId !== lastVideoId) {
+            location.href = newUrl;
+            return true;
+        }
+        return false;
+    }
+
     const originalPush = history.pushState;
     history.pushState = function () {
-        // force reload if url changes
-        if (arguments[2]) {
-            location.href = arguments[2];
-        } else {
-            originalPush.apply(this, arguments);
-        }
+        const url = arguments[2];
+        if (url && reloadIfChanged(url.toString())) return;
+        originalPush.apply(this, arguments);
     };
 
-    // catch clicks before youtube handles them
+    const originalReplace = history.replaceState;
+    history.replaceState = function () {
+        const url = arguments[2];
+        if (url && reloadIfChanged(url.toString())) return;
+        originalReplace.apply(this, arguments);
+    };
+
     window.addEventListener('click', function (e) {
         const link = e.target.closest('a');
         if (!link) return;
 
         const url = link.href;
-
-        // only force reload for video navigation
         if (url && url.includes('/watch?v=')) {
             e.preventDefault();
             location.href = url;
         }
     }, true);
+
+    setInterval(() => {
+        const currentId = getVideoId(location.href);
+        if (currentId && currentId !== lastVideoId) {
+            location.reload();
+        }
+    }, 500);
+
+    window.addEventListener('yt-navigate-finish', () => {
+        const currentId = getVideoId(location.href);
+        if (currentId && currentId !== lastVideoId) {
+            location.reload();
+        }
+    });
 })();
