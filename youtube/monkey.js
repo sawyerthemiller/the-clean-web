@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         YT Redux Improver
 // @namespace    http://tampermonkey.net/
-// @version      1.1
-// @description  Do what they won't
+// @version      1.2
+// @description  do what they won't...
 // @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
@@ -174,43 +174,39 @@
     // Inject CSS that overrides YouTube's rounded corners
     const style = document.createElement('style');
     style.textContent = `
+        .style-scope.tp-yt-paper-menu-button,
+        .style-scope.tp-yt-paper-menu-button *,
+
+        button.yt-spec-button-shape-next,
+        yt-collections-stack.ytCollectionsStackHost *,
         yt-flexible-actions-view-model a.yt-spec-button-shape-next,
         yt-flexible-actions-view-model .yt-spec-button-shape-next__button,
         yt-flexible-actions-view-model .yt-spec-button-shape-next__outline,
+        yt-flexible-actions-view-model a.yt-spec-button-shape-next > *,
         yt-flexible-actions-view-model .yt-spec-button-shape-next__button-text-content,
-        yt-spec-button-shape-next {
-            border-radius: 0 !important;
-        }
-
-        /* These two target the internal button container used by YT Studio */
-        yt-flexible-actions-view-model a.yt-spec-button-shape-next > * {
-            border-radius: 0 !important;
-        }
-
-        /* And this nails the backdrop-filter shadow shape */
         yt-flexible-actions-view-model yt-touch-feedback-shape .yt-spec-touch-feedback-shape__fill,
-        yt-flexible-actions-view-model yt-touch-feedback-shape .yt-spec-touch-feedback-shape__stroke {
+        yt-flexible-actions-view-model yt-touch-feedback-shape .yt-spec-touch-feedback-shape__stroke,
+
+        button.yt-spec-button-shape-next *,
+        yt-spec-button-shape-next,
+
+        [aria-label="Sort comments"] {
             border-radius: 0 !important;
         }
 
-        /* Fix the stacks so they look normal */
-        yt-collections-stack.ytCollectionsStackHost * {
-        border-radius: 0 !important
+        span.yt-core-attributed-string,
+        span.yt-icon-shape.ytSpecIconShapeHost,
+        div.yt-spec-button-shape-next__icon {
+            color: white;
         }
 
-        button.yt-spec-button-shape-next {
-        border-radius: 0 !important;
-        }
-        button.yt-spec-button-shape-next * {
-        border-radius: 0 !important;
+        .yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--enable-backdrop-filter-experiment {
+            background-color: transparent !important;
         }
 
-        .ytThumbnailViewModelImage {
-        background: #000 !important;
-        }
-
+        .ytThumbnailViewModelImage
         .ytThumbnailViewModelImage img {
-        background: #000 !important;
+            background: #000 !important;
         }
     `;
     document.head.appendChild(style);
@@ -311,7 +307,7 @@
         // --- TASK 3: Move Sidebar 4px to the Right ---
         const secondaryColumn = document.getElementById('secondary');
         if (secondaryColumn) {
-            secondaryColumn.style.marginLeft = '7px';
+            secondaryColumn.style.marginLeft = '6px';
         }
 
         // --- TASK 4: Hide Download Button ---
@@ -357,4 +353,33 @@
     // Initial run
     applyTweaks();
 
+})();
+
+(function () {
+    'use strict';
+
+    // stop youtube SPA navigation
+    const originalPush = history.pushState;
+    history.pushState = function () {
+        // force reload if url changes
+        if (arguments[2]) {
+            location.href = arguments[2];
+        } else {
+            originalPush.apply(this, arguments);
+        }
+    };
+
+    // catch clicks before youtube handles them
+    window.addEventListener('click', function (e) {
+        const link = e.target.closest('a');
+        if (!link) return;
+
+        const url = link.href;
+
+        // only force reload for video navigation
+        if (url && url.includes('/watch?v=')) {
+            e.preventDefault();
+            location.href = url;
+        }
+    }, true);
 })();
