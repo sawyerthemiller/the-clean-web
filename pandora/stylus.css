@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Pandora Classic
-@version        1.1
-@description    A remake of the Pandora interface from 2015.
+@name           Pandora V Classic
+@version        1.2
+@description    A mod of the TH original stylesheet to work with the Vizio interface
 @author         Tech How
-@namespace      Tech-How
+@namespace      Sawyer Miller
 ==/UserStyle== */
 
 @-moz-document domain("pandora.com") {
@@ -75,7 +75,13 @@
     background: none;
 }
 
-.Tuner, .AnonHeader--sticky {
+
+.region-topBar.region-topBar--searchT3 {
+    background: linear-gradient(#002141,#003362);
+    border-bottom: 2px solid white;
+}
+    
+.Tuner {
     background: linear-gradient(#003362,#002141);
 }
 
