@@ -1,12 +1,15 @@
 /* ==UserStyle==
 @name           Pandora V Classic
-@version        1.2
+@version        1.3
 @description    A mod of the TH original stylesheet to work with the Vizio interface
 @author         Tech How
 @namespace      Sawyer Miller
+@updateURL      https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/stylus.css
+@downloadURL    https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/stylus.css
 ==/UserStyle== */
 
 @-moz-document domain("pandora.com") {
+  
   .Container__splash
   {
     background: #09102A  url(https://raw.githubusercontent.com/Tech-How/Pandora-Classic/main/images/style/splash.png) center top no-repeat;
@@ -18,16 +21,9 @@
     background-image: url(https://raw.githubusercontent.com/Tech-How/Pandora-Classic/main/images/style/splashLogo.png);
   }
 
-/*.Container__splash__logo::before
-  {
-    content: "Internet Radio";
-    position: relative;
-    top: 7.25rem;
-    left: 18rem;
-    font-family: inherit;
-    font-size: 3rem;
-    color: #FFF;
-  }*/
+  :root {
+  --stylus-ok: 1;
+  }
 
   .MiniBar--rightRail,
 .region-topBar--rightRail,
@@ -518,43 +514,10 @@ body > div.Container > div > main > div > div > span > div > div > div.NowPlayin
 }
 }
 
-@-moz-document url-prefix("https://www.pandora.com/account/sign-in"), url-prefix("https://www.pandora.com/account/register"), url-prefix("https://www.pandora.com/plans"), url-prefix("https://www.pandora.com/account/help") {
-/*.AuthLayout__container, .UpgradeLayout__container {
-    backdrop-filter: blur(40px);
-    padding-top: 6rem;
-}
-
-.AuthLayout__container {
-    padding-bottom: 20rem;
-}
-
-.UpgradeLayout__container {
-    padding-bottom: 32rem;
-}
-
-.Footer {
-    position: absolute;
-	bottom: 0px;
-	left:0;
-	right:0;
-	z-index: 1;
-}
-
-.AnonHeader {
-    position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left:0;
-	right:0;
-	z-index: 1;
-}*/
-}
-
 @-moz-document url("https://www.pandora.com/"), url-prefix("https://www.pandora.com/account/sign-in"), url-prefix("https://www.pandora.com/account/register"), url-prefix("https://www.pandora.com/plans"), url-prefix("https://www.pandora.com/account/help") {
 body, .AuthLayout, .UpgradeLayout.UpgradeLayout--anon {
     background: #09102A  url(https://raw.githubusercontent.com/Tech-How/Pandora-Classic/main/images/style/splash.png) center top no-repeat;
     background-size: cover;
-    /*backdrop-filter: blur(40px);*/
 }
 
 .AppBg:after {
