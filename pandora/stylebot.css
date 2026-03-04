@@ -499,3 +499,8 @@ ul.DropdownBox {
 :root {
   --stylebot-ok: 1;
 }
+
+div.Fillet__image {
+  border-radius: 0px;
+  border: 1px solid black
+}
