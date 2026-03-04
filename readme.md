@@ -19,3 +19,7 @@ e. you must install the required font 'segoe ui supro'
 a. the pandora one is now fully resizable so will probably no longer get updates due to relatively stable pandora DOM :)\
 b. the netflix one has been updated so please see the greasyfork link in the url file to view changes\
 c. usage of the filter list is at your own risk, and some are personal aesthetical preferences by me which MAY break site interfaces
+
+**recommended**
+
+[here](https://github.com/sawyerthemiller/netflix-comments-firefox) is a comments extension i made for netflix - expereince a youtube-like comments expxereince on netflix 
