@@ -2,11 +2,14 @@
 //
 // @name         Pandora VIA
 // @namespace    http://leopardindustries.net
-// @version      1.6
-// @description  Final update for a while, added full resize capability
+// @version      1.7
+// @description  Get the VIZIO TV UI on Pandora Web Player
+// @icon         https://images.icon-icons.com/17/PNG/256/Pandora_1992.png
 // @match        https://www.pandora.com/*
 // @grant        none
-// @icon         https://images.icon-icons.com/17/PNG/256/Pandora_1992.png
+//
+// @updateURL    https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/monkey.js
+// @downloadURL  https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/monkey.js
 //
 // ==/UserScript==
 
@@ -14,9 +17,7 @@
     'use strict';
 
     console.log("our time is now");
-    console.log("sending data...");
 
-    // --- MAIN TOGGLE LOGIC ---
     const targets = [
         'div.GlobalSearchInput__inner',
         'div.SourceList',
@@ -108,7 +109,6 @@
 
 })();
 
-// --- 16:10 FULLSCREEN VOLUME CONTROL FIX ---
 (function () {
     'use strict';
 
@@ -280,7 +280,6 @@
         if (e.key.toLowerCase() === 'e') document.querySelectorAll('.hidden-icon').forEach(el => el.style.display = 'none');
     });
 
-    // --- STARTUP HINT MODAL ---
     function showStartupHint() {
         const hint = document.createElement('div');
         hint.textContent = "hold the 'v' key to open vizio apps bar";
@@ -290,36 +289,32 @@
             top: '40px',
             left: '20px',
             width: '15%',
-            background: 'rgba(0, 0, 0, 0.85)', // Slightly opaque black
+            background: 'rgba(0, 0, 0, 0.85)',
             color: '#fff',
             fontSize: '18px',
             fontWeight: 'bold',
             textAlign: 'center',
             padding: '15px 0',
             zIndex: '1000000',
-            borderRadius: '0px', // Explicit 0px border radius
+            borderRadius: '0px',
             fontFamily: 'Segoe UI Supro',
             boxShadow: '0 2px 10px rgba(0,0,0,0.5)',
             border: '1px solid #444',
-            transition: 'top 0.5s ease' // Smooth slide animation
+            transition: 'top 0.5s ease'
         });
 
         document.body.appendChild(hint);
 
-        // Slide it out after 4 seconds
         setTimeout(() => {
             hint.style.top = '-100px';
-            // Remove from DOM after animation finishes
             setTimeout(() => hint.remove(), 500);
         }, 6000);
     }
 
-    // Run immediately
     showStartupHint();
 
 })();
 
-// --- NOW PLAYING → CURRENT TIME ---
 setInterval(() => {
     const link = document.querySelector('a[data-qa="header_now_playing_link"] span:first-child');
     if (link) {
@@ -328,31 +323,26 @@ setInterval(() => {
     }
 }, 1000);
 
-// --- AUTO CLICK "I'M STILL LISTENING" ---
 const stillListeningObserver = new MutationObserver(() => {
     const btn = document.querySelector('button[data-qa="keep_listening_button"]');
     if (btn) btn.click();
 });
 stillListeningObserver.observe(document.body, { childList: true, subtree: true });
 
-// --- ELEMENT MOVERS (UNIFIED + ON LOAD + PERSISTENT) ---
 (function () {
     'use strict';
 
     const volumeSelector = 'div.VolumeDurationControl';
     const thumbsSelector = 'button[data-qa="thumbs_up_button"]';
     const menuBtnSelector = 'button.MenuToggleButton';
-    // List of potential anchors in order of preference
     const anchorSelectors = [
         '.nowPlayingTopInfo__current__inner',
         '.nowPlayingTopInfo__current__albumName'
     ];
 
     function runElementMovers() {
-        // 1. Move Volume Control (Existing Logic - Preserved)
         const volumeEl = document.querySelector(volumeSelector);
 
-        // Find the first valid anchor
         let anchorEl = null;
         for (const sel of anchorSelectors) {
             anchorEl = document.querySelector(sel);
@@ -363,10 +353,8 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
             const parentRect = volumeEl.offsetParent.getBoundingClientRect();
             const anchorRect = anchorEl.getBoundingClientRect();
 
-            // Calculate position relative to the offset parent
-            // We want it 10px below the anchor
             const top = anchorRect.bottom - parentRect.top - 15;
-            // Align left with the anchor
+
             const left = anchorRect.left - parentRect.left + 60;
 
             Object.assign(volumeEl.style, {
@@ -382,12 +370,6 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
             });
         }
 
-        // 2. Move Buttons (Dynamic Vertical Stacking)
-        // Rules:
-        // - ThumbsUp: 10px below Album Name
-        // - ThumbsDown: 10px below ThumbsUp
-        // - Menu: 10px below ThumbsDown
-
         const albumEl = document.querySelector('.nowPlayingTopInfo__current__albumName');
         const thumbsUpEl = document.querySelector('.ThumbUpButton');
         const thumbsDownEl = document.querySelector('.ThumbDownButton');
@@ -396,30 +378,25 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         if (albumEl && thumbsUpEl && thumbsDownEl && menuEl) {
             const anchorRect = albumEl.getBoundingClientRect();
 
-            // Helper to enforce vertical position while respecting offsetParent
             const placeElement = (el, referenceRectBottom) => {
-                if (!el.offsetParent) return referenceRectBottom; // skip if hidden
+                if (!el.offsetParent) return referenceRectBottom;
 
                 const parentRect = el.offsetParent.getBoundingClientRect();
 
-                // Vertical: 10px gap below reference
                 const top = referenceRectBottom - parentRect.top + 25;
 
-                // Horizontal: Align with Album Name + 60px indent
                 const left = anchorRect.left - parentRect.left + 60;
 
                 el.style.setProperty('position', 'absolute', 'important');
                 el.style.setProperty('top', `${top}px`, 'important');
-                el.style.setProperty('left', `${left - 30}px`, 'important'); // Fix "stairs": force unified left
-                el.style.setProperty('right', 'auto', 'important');     // Clear any conflicting 'right'
-                el.style.setProperty('bottom', 'auto', 'important');    // Override user's 'bottom'
+                el.style.setProperty('left', `${left - 30}px`, 'important');
+                el.style.setProperty('right', 'auto', 'important');
+                el.style.setProperty('bottom', 'auto', 'important');
                 el.style.setProperty('margin', '0', 'important');
 
-                // Return this element's new bottom for the next item to stack against
                 return el.getBoundingClientRect().bottom;
             };
 
-            // Stack them up
             let currentBottom = albumEl.getBoundingClientRect().bottom;
             currentBottom = placeElement(thumbsUpEl, currentBottom);
             currentBottom = placeElement(thumbsDownEl, currentBottom);
@@ -427,23 +404,18 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         }
     }
 
-    // Run continuously until found, then maintain
     const persistentMover = setInterval(runElementMovers, 10);
 
-    // Run on resize and fullscreen
     window.addEventListener('resize', runElementMovers);
     document.addEventListener('fullscreenchange', runElementMovers);
 
-    // Watch for DOM changes (loading new songs, SPA navigation) to force alignment
     const moverObserver = new MutationObserver(runElementMovers);
     moverObserver.observe(document.body, { childList: true, subtree: true });
 
-    // Initial run
     runElementMovers();
 
 })();
 
-// --- REMOVE PERIOD FROM END OF ALBUM NAME ---
 (function () {
     'use strict';
 
@@ -458,21 +430,17 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         }
     }
 
-    // run immediately
     fixAlbumName();
 
-    // observe changes in the album name
     const observer = new MutationObserver(fixAlbumName);
     const target = document.querySelector(selector);
     if (target) {
         observer.observe(target, { childList: true });
     }
 
-    // fallback: check every second in case the element changes
     setInterval(fixAlbumName, 1000);
 })();
 
-// --- FIX THE PLAY ICON SVG BEING OFF CENTER WHEN PAUSED ---
 (function () {
     'use strict';
 
@@ -491,14 +459,93 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         });
     }
 
-    // Initial run
     updatePlayButtons();
 
-    // Watch for dynamic changes
     const observer = new MutationObserver(updatePlayButtons);
     observer.observe(document.body, {
         childList: true,
         subtree: true,
         attributes: true
     });
+})();
+
+(function () {
+    'use strict';
+
+    function checkStyles() {
+        const styles = getComputedStyle(document.documentElement);
+
+        const stylus = styles.getPropertyValue('--stylus-ok').trim();
+        const stylebot = styles.getPropertyValue('--stylebot-ok').trim();
+
+        const missing = [];
+        if (!stylus) missing.push("Stylus");
+        if (!stylebot) missing.push("Stylebot");
+
+        if (missing.length > 0) {
+            showMetroModal(missing);
+        }
+    }
+
+    function showMetroModal(missingList) {
+        if (document.getElementById("metro-style-warning")) return;
+
+        const overlay = document.createElement("div");
+        overlay.id = "metro-style-warning";
+        overlay.style.position = "fixed";
+        overlay.style.inset = "0";
+        overlay.style.background = "rgba(0,0,0,0.75)";
+        overlay.style.display = "flex";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+        overlay.style.zIndex = "999999";
+
+        const modal = document.createElement("div");
+        modal.style.background = "#111";
+        modal.style.color = "#fff";
+        modal.style.padding = "15px";
+        modal.style.width = "420px";
+        modal.style.fontFamily = "Segoe UI Supro";
+        modal.style.borderLeft = "3px solid #00a2ed";
+
+        modal.innerHTML = `
+            <h2 style="margin: 0 0 15px 0;font-weight:300;">Required Style Missing!!!</h2>
+            <p style="margin: 0 0 15px 0;">
+                Missing sheet or extension <strong>${missingList.join(", ")}</strong>
+            </p>
+            <p style="margin: 0 0 15px 0;">
+                Install it from
+                <a href="https://github.com/sawyerthemiller/the-clean-web/tree/main/pandora"
+                   target="_blank"
+                   style="color: #00a2ed; text-decoration: none;">
+                   here
+                </a>
+            </p>
+            <div style="text-align:right;">
+                <button id="metro-close-btn"
+                    style="
+                        background: #00a2ed;
+                        border: none;
+                        color: #fff;
+                        padding: 8px 18px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;">
+                    IGNORE
+                </button>
+            </div>
+        `;
+
+        overlay.appendChild(modal);
+        document.body.appendChild(overlay);
+
+        document.getElementById("metro-close-btn").onclick = () => {
+            overlay.remove();
+        };
+    }
+
+    window.addEventListener("load", () => {
+        setTimeout(checkStyles, 100);
+    });
+
 })();
