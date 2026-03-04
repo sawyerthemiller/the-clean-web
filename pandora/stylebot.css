@@ -495,3 +495,7 @@ a.DropdownOption__item,
 ul.DropdownBox {
   border-radius: 0px;
 }
+
+:root {
+  --stylebot-ok: 1;
+}
