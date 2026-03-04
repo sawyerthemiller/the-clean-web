@@ -588,11 +588,21 @@ stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.ani
 stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(4) > .info-container-AdMB6 > .description-container-v7Jhe
 stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(2) > .info-container-AdMB6 > .description-container-v7Jhe
 stremio-neo.aayushcodes.eu##div.button-container-zVLH6.addon-container-lC5KN.animation-fade-in.addon-whmdO:nth-of-type(1) > .info-container-AdMB6 > .description-container-v7Jhe
+##div.modal.modal--error.modal--raceError
 ||torrentio.strem.fun/images/logo_v1.png$image
 ||stremio-neo.aayushcodes.eu/undefined$image
 stremio-neo.aayushcodes.eu##.modal-dialog-background-vZpB_
 
-||m.media-amazon.com/images/G/01/x-locale/cs/ship-track/pt2/holiday/2025/Holiday25/Gold_Foil_Stripe_Desktop_864x10._CB1764923248_.jpg
+! 19 Dec 2025 https://x.com
+x.com##.r-1wtj0ep.r-1cmwbt1.r-18u37iz.r-1awozwy.css-175oi2r > .r-1h0z5md.r-18u37iz.css-175oi2r > .r-1ny4l3l.r-1loqt21.r-lrvibr.r-bztko3.r-bt1l66.r-1777fci.css-175oi2r > .r-3s2u2q.r-clp7b1.r-o7ynqc.r-1h0z5md.r-6koalj.r-1awozwy.r-16dba41.r-rjixqe.r-a023e6.r-37j5jr.r-qvutc0.r-1ttztb7.r-bcqeeo.css-146c3p1 > .r-xoduu5.css-175oi2r > .r-1ny4l3l.r-6416eg.r-o7ynqc.r-xf4iuw.r-sdzlij.r-1niwhzg.r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490.r-1p0dtai.r-xoduu5.css-175oi2r
+x.com##.r-bnwqim.r-xoduu5.css-175oi2r > .r-m6rgpd.r-lrvibr.r-bnwqim.r-dnmrzs.r-1xvli5t.r-yyyyoo.r-4qtqp9 > g > path
+x.com##.r-16dba41.r-1cwl3u0.r-n6v787.r-37j5jr.r-qvutc0.r-1ttztb7.r-bcqeeo.r-3s2u2q.r-1udbk01.r-1udh08x.r-dnmrzs.css-146c3p1
+
+! 20 Dec 2025 http://leopardindustries.net
+leopardindustries.net##.dir.icon
+
+! 23 Dec 2025 https://www.amazon.com
+||m.media-amazon.com/images/G/01/x-locale/cs/ship-track/pt2/holiday/2025/Holiday25/Gold_Foil_Stripe_Desktop_864x10._CB1764923248_.jpg$image
 
 ! 23 Dec 2025 http://192.168.132.186
 192.168.132.186##.icon
@@ -607,6 +617,9 @@ www.msoe.edu##.secondary_nav_lg.secondary_nav > .secondary_nav_list > div.second
 ! 25 Dec 2025 https://my.msoe.edu
 my.msoe.edu###pg2_CustomContentPortlet > .portlet-header-bar > h3 > [href^="/ICS/Portal_Homepage.jnz"]
 ||macserialjunkie.com/*/snowstorm-min.js$script
+
+! 26 Dec 2025 http://192.168.8.1
+192.168.8.1##p
 
 ! 29 Dec 2025 https://www.reddit.com
 www.reddit.com##.end-xs.bottom-0.absolute > faceplate-tracker > .inline-flex.button.justify-center.items-center.icon.button-secondary.px-\[var\(--rem6\)\].button-small
@@ -699,13 +712,10 @@ www.reddit.com##faceplate-tracker > .text-secondary.leading-4.rounded-5.px-\[6px
 
 ! 20 Jan 2026 https://msoe.instructure.com
 msoe.instructure.com##div.ic-DashboardCard:nth-of-type(5)
-msoe.instructure.com##div.ic-DashboardCard:nth-of-type(6)
 msoe.instructure.com##div.ic-DashboardCard:nth-of-type(8) > .ic-DashboardCard__header > .ic-DashboardCard__link > .ic-DashboardCard__header_content > .ellipsis.ic-DashboardCard__header-subtitle
 msoe.instructure.com##.ColorPicker__Container
 msoe.instructure.com##.css-8oqz18-view--block-avatar
 ||msoe.instructure.com/courses/22953/files/3259582/preview$image
-msoe.instructure.com##tr:nth-of-type(2) > .percent
-msoe.instructure.com##tr:nth-of-type(5) > .percent
 
 ! 20 Jan 2026 https://macosicons.com
 macosicons.com##._coral-StatusLight.m-t-32.status-alert-info
@@ -729,10 +739,8 @@ msoe.instructure.com##.vertical.bottom.center.ui-widget-content.ui-corner-all.ui
 my.msoe.edu###pg2_CustomContentPortlet > .portlet-header-bar > .portlet-help-wrapper > .help.btn-no-bg-hover-color-content-one.btn > .glyphicons-question-sign.glyphicons
 
 ! 21 Jan 2026 https://msoe.instructure.com
-msoe.instructure.com/grades##tr:nth-of-type(5)
 msoe.instructure.com/grades##tr:nth-of-type(1)
 msoe.instructure.com/grades##tr:nth-of-type(2)
-msoe.instructure.com/grades##tr:nth-of-type(4) > .percent
 msoe.instructure.com/grades##div.ic-Layout-contentMain h2:style(margin-left: 24px !important)
 msoe.instructure.com##.submitted.profile_pic_link.avatar.fs-exclude
 msoe.instructure.com##[href^="https://myaccount.google.com/"] > [src^="blob:https://msoe.instructure.com/"]
@@ -759,6 +767,9 @@ www.youtube.com##.player-height.yt-scrollbar-dark.yt-scrollbar-wide.yt-scrollbar
 www.youtube.com##.slider-buttons
 www.youtube.com###eow-description > .run-text.run
 
+!! www.netflix.com##div.default-ltr-iqcdef-cache-gpipej:nth-of-type(3) > div.default-ltr-iqcdef-cache-1npqywr:nth-of-type(4)
+www.netflix.com##:root:style(--mods-ok: yes !important;)
+
 ! 21 Jan 2026 https://www.curseforge.com
 www.curseforge.com##.link-btn-icon.premium-button-container.btn-secondary.link-btn
 
@@ -784,7 +795,8 @@ msoe.instructure.com###message-body-root_statusbar
 127.0.0.1##p > em
 127.0.0.1##img
 127.0.0.1##[href] > em
-127.0.0.1##i
+
+127.0.0.1##[href="https://www.flickr.com/photos/imagelink/4006753760/in/photolist-774Eio-8gRapj-cAJvWQ-8Z6NkM-djKy-7aT4jN-8DcQaP-5vQG7X-emi7PE-7Q1yCB-7HbCEt-oV2d2h-5PJQah-g1KQ9p-g1KZ7p-g1KHa3-g1KxNh-nvyPib-mmC6T-mCq3b-dDNWKm-f9Wm2i-mddy73-7k7X8-ryQc-nU1mcr-5V6Ag-9qF2ta-b8BHgT-63f7WV-bYUxhf-8mJRjn-g1KXpN-g1KNQJ-jTKn7M-g1EDcJ-6SZEqS-g1L4mK-gwmN7H-4NuKWv-gwmAC2-6akRDL-gwmFi5-25QEaP-6twbbX-hokLfQ-g1Ljrp-g1L3vt-g1Le9R-4d7yyL"]
 
 ! 22 Jan 2026 https://www.wqusability.com
 ||www.wqusability.com/articles/balanced-t.gif$image
@@ -804,9 +816,6 @@ www.linkedin.com##div > .t-normal.t-12.global-footer__dropdown-trigger.global-fo
 ! 23 Jan 2026 https://store.directsupply.com
 store.directsupply.com##._pendo-step-container-styles
 store.directsupply.com###pendo-g-OB9woDAs2O29zIejtFQrJwkrsQ0
-
-! 23 Jan 2026 https://msoe.instructure.com
-msoe.instructure.com##.css-162dvle-view
 
 ! 23 Jan 2026 https://msoe.instructure.com
 msoe.instructure.com##.css-162dvle-view
@@ -936,6 +945,7 @@ www.vaporhatch.com###shopify-section-sections--21715319783720__announcement_bar_
 ! 26 Jan 2026 https://www.bing.com
 www.bing.com/search###tm-wallpaper-manager > div
 www.bing.com##.composer_wrapper
+||storage.live.com/users/0x1387e3808c176439/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1&ex=720&sid=28F6D09079BE62513CD6C67D78FA63B4&fofoff=1$image
 www.bing.com##.vs_bs_credit
 www.bing.com###id_rfob > .rms_img
 www.bing.com##li.b_algo > .b_tpcn > .tilk > .tpic
@@ -971,6 +981,9 @@ tabs.ultimate-guitar.com##a.h5KPm.w95q9.ClX4D.ooNE6.fiB3E.cTzGe.OetHI.ru_9u.aPN9
 
 ! 27 Jan 2026 https://www.nytimes.com
 www.nytimes.com##.desktop.tablet.smartphone > div > .e1ppw5w20.css-hocbjh
+
+! 27 Jan 2026 https://www.bing.com
+||storage.live.com/users/0x1387e3808c176439/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1&ex=720&sid=3F3F7BB433A96DB50EE56D5A32F66CAE&fofoff=1$image
 
 ! 27 Jan 2026 https://thebulletin.org
 ||thebulletin.org/wp-content/uploads/2025/01/doomsday-clock-89-seconds-r.png$image
@@ -1016,8 +1029,6 @@ athome.fandango.com##li:nth-of-type(7)
 ! 29 Jan 2026 http://leopardindustries.net
 leopardindustries.net##footer
 
-teams.microsoft.com##div[role="group"][data-inp="banner-notification"]
-
 ! 29 Jan 2026 https://thebulletin.org
 thebulletin.org##.fl-node-63s2dezb7cgv.fl-rich-text.fl-module-rich-text.fl-module > p
 
@@ -1041,7 +1052,7 @@ www.nitrotype.com##.swoop--hero.home--swoop
 ! 29 Jan 2026 https://www.reddit.com
 www.reddit.com##shreddit-loading
 
-! 29 Jan 2026 http://localhost:8000 ! FOR READABLE APP ONLY DELETE IF YOU DON'T USE READABLE
+! 29 Jan 2026 http://localhost:8000
 localhost##ul:nth-of-type(1)
 localhost##h2:nth-of-type(1)
 localhost##li:nth-of-type(5)
@@ -1204,6 +1215,16 @@ www.etsy.com##.wt-justify-content-flex-end.wt-position-relative.wt-flex-directio
 ! 15 Feb 2026 https://github.com
 github.com##.js-notice.BorderGrid-row > .BorderGrid-cell
 
+! 15 Feb 2026 https://enderman.ch
+enderman.ch##.whitespace-nowrap
+
+! 15 Feb 2026 https://www.reddit.com
+www.reddit.com##[href^="https://reddit.com/r/pcmasterrace/search"] > faceplate-gif > .max-w-full.w-full.h-auto
+www.reddit.com##[href="https://pcmasterrace.org/folding/"] > faceplate-gif > .max-w-full.w-full.h-auto
+
+! 15 Feb 2026 https://github.com
+github.com##.d-md-block.d-none.mt-3.pt-3.color-border-muted.border-top
+
 ! 15 Feb 2026 https://claude.ai
 claude.ai##.border-accent-secondary-100\/50.bg-accent-secondary-900.text-accent-secondary-000.max-w-\[16\.6rem\].shadow-sm.border-0\.5.p-4.rounded-xl.z-tooltip.fixed.font-base
 claude.ai##.opacity-1.duration-500.transition
@@ -1245,9 +1266,6 @@ x.com##.r-gu4em3.r-109y4c4.r-l00any.css-175oi2r
 ! 18 Feb 2026 https://x.com
 x.com##.active.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r > .r-6416eg.r-o7ynqc.r-xyw6el.r-1777fci.r-18u37iz.r-1awozwy.r-dnmrzs.r-sdzlij.css-175oi2r > .css-175oi2r > .r-1ld3bg.r-615f2u.r-u8s1d.r-12rgx7y.r-lrvibr.r-1ozsyd3.r-1yadl64.r-sdzlij.r-l5o3uw.css-175oi2r
 
-! 18 Feb 2026 https://msoe.instructure.com
-msoe.instructure.com##.css-1qhrloy-view--inlineBlock-baseButton
-
 ! 19 Feb 2026 https://card.discover.com
 card.discover.com##.at-overlay
 
@@ -1258,7 +1276,7 @@ x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.c
 ! 20 Feb 2026 https://www.lemon64.com
 www.lemon64.com##.donation-box
 
-! 20 Feb 2026 https://epsteinexposed.com (hides only annoying elements NOTHING else, fuck trump and epstein and all their asosciates)
+! 20 Feb 2026 https://epsteinexposed.com
 epsteinexposed.com##a.hover\:bg-bg-hover.hover\:text-text-primary.text-text-secondary.transition-colors.rounded-md.font-medium.text-sm.py-1\.5.px-2\.5:nth-of-type(11)
 epsteinexposed.com##.transition-colors.hover\:bg-accent-gold\/20.text-accent-gold.font-medium.text-sm.py-1\.5.px-2.border-accent-gold\/30.border.bg-accent-gold\/10.rounded-lg.items-center.flex
 epsteinexposed.com##.group.z-\[55\].sm\:right-5.sm\:bottom-20.right-4.bottom-20.fixed
@@ -1316,6 +1334,9 @@ techrechard.com##.onesignal-slidedown-dialog
 
 github.com##.Diff-module__diffHeaderWrapper__VTI5w::before
 
+! 21 Feb 2026 https://ihsoyct.github.io
+ihsoyct.github.io###highlight
+
 ! 21 Feb 2026 https://www.reddit.com
 www.reddit.com##shreddit-comment-tree > shreddit-comment.relative > .relative > .min-h-xl > .nd\:hidden.block > .nd\:hidden > div > shreddit-async-loader
 www.reddit.com##.mr-\[2px\].ml-sm.flex
@@ -1337,3 +1358,102 @@ ihsoyct.github.io##label:nth-of-type(7)
 ihsoyct.github.io##label:nth-of-type(5)
 ihsoyct.github.io##label.comments_only:nth-of-type(19)
 ihsoyct.github.io###toggle-images-container
+
+! 26 Feb 2026 https://jmail.world
+||jmail.world/_next/image?url=%2Fjotify%2Fjotify.png&w=*&q=75&dpl=dpl_9MSxrRNXsAoaXhapNJLW9FwnWmUa$image
+
+! 27 Feb 2026 https://www.geeky-gadgets.com
+www.geeky-gadgets.com###qc-cmp2-usp
+www.geeky-gadgets.com##.css-48yem0.qc-cmp-cleanslate
+
+! 27 Feb 2026 https://www.inc.com
+www.inc.com##.duration-150.font-bold.py-\[8px\].px-5.bg-black.border-inc-gray-200.border-b.z-50.top-0.sticky.transition-height
+www.inc.com###article_share_google_icon
+
+! 27 Feb 2026 https://unogs.com
+||www.redditstatic.com/spreddit5.gif$image
+
+! 28 Feb 2026 https://www.pandora.com
+www.pandora.com##.Modal__overlay
+www.pandora.com##.fx-overlay-enter-active.Modal
+
+! 28 Feb 2026 https://www.imdb.com
+www.imdb.com##.hKmVyS.sc-3b69581a-1
+www.imdb.com##.footer__copyright.imdb-footer__copyright
+
+! 28 Feb 2026 https://www.bing.com
+www.bing.com##.popup.b_bnp_bopc
+
+! 28 Feb 2026 https://www.imdb.com
+www.imdb.com##.ipc-avatar--base.ipc-avatar > .ipc-focusable.ipc-lockup-overlay > .ipc-lockup-overlay__screen
+www.imdb.com##.ipc-avatar--base.ipc-avatar > .ipc-focusable.ipc-lockup-overlay
+www.imdb.com##.ipc-media--fallback.ipc-avatar__avatar-image.ipc-media--custom.ipc-media--base.ipc-media--circle-radius.ipc-image-media-ratio--avatar.ipc-media--avatar.ipc-media > .ipc-media__icon.ipc-icon--inline.ipc-icon
+
+! 1 Mar 2026 https://www.alliance4creativity.com
+www.alliance4creativity.com##.wrapper
+
+! 1 Mar 2026 https://freeship.leopardindustries.net
+||store.elfhosted.com/wp-content/uploads/2024/11/logo.svg$image
+freeship.leopardindustries.net###unofficialInstanceBanner
+freeship.leopardindustries.net###kofi-wo-containerkofi-widget-overlay-3d8c2113-a104-4953-ad88-a44d2fc9af77
+freeship.leopardindustries.net##.full-width.more-addons-btn
+
+! 1 Mar 2026 https://web.stremio.com
+web.stremio.com##.warning-container-_GJlx.board-warning-container-a4m04
+
+! 1 Mar 2026 https://freeship.leopardindustries.net
+freeship.leopardindustries.net###kofi-wo-containerkofi-widget-overlay-b3b6b19e-b894-443f-98ae-2acf571ed40b
+
+! 1 Mar 2026 http://leopardindustries.net:86
+leopardindustries.net##.bg-error.tooltip.badge-xs.badge
+
+! 2 Mar 2026 https://www.facebook.com
+www.facebook.com##.x1g0dm76.xsag5q8.xpdmqnj.xz9dl7a.x10wlt62.x6ikm8r.xh8yej3.x9f619.xau1kf4.x1vsv7so.x1dmpuos.xw5cjc7.xlhe6ec.x1ja2u2z.x1n2onr6
+||static.xx.fbcdn.net/images/emoji.php/v9/ta1/2/16/2b07.png$image
+www.facebook.com##.x1n2onr6.x10wlt62.x6ikm8r.x1lliihq > span > .xxymvpz.x1n2onr6.x1dor1uw.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span > span
+||static.xx.fbcdn.net/images/emoji.php/v9/ta1/2/16/2b07.png$image
+www.facebook.com##div.x1lliihq:nth-of-type(2) > div > span > .x1lliihq > div > .xod5an3.x1ja2u2z.xh8yej3.x1n2onr6 > .x1ja2u2z.x1n2onr6 > div > div > .x1a2a7pz > .xdt5ytf.x78zum5 > .x1ja2u2z.x1n2onr6.x9f619 > .xh8yej3.x1n2onr6.x78zum5.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div > .xquyuld.x10wlt62.x6ikm8r.xh8yej3.x9f619.xau1kf4.x1vsv7so.x1dmpuos.xw5cjc7.x1jx94hy.x1ja2u2z.x1n2onr6
+www.facebook.com##.x7wzq59 > .xgpatz3.xdt5ytf.x78zum5 > .xh8yej3.x1n2onr6.x78zum5.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div
+www.facebook.com##div.xmzvs34.xwib8y2.xf159sx.x1y1aw1k.x1pshirs.xl56j7k.xs83m0k.x1iyjqo2.x1r8uery.x78zum5.x15x8krk.xde0f50.x5a5i1n.x1obq294.x6s0dn4.x1a2a7pz.x1lku1pv.x87ps6o.x1q0g3np.x1t137rt.x1ja2u2z.xggy1nq.x1hl2dhg.x16tdsg8.x1n2onr6.x2lwn1j.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x1t7ytsu.x1q0q8m5.x18b5jzi.x13fuv20.x1phubyo.xqeqjp1.xc5r6h4.xjqpnuy.xjbqb8w.x1i10hfl:nth-of-type(2)
+www.facebook.com##.xh8yej3 > .xh8yej3.x1n2onr6.xl56j7k.xdt5ytf.x3nfvp2.x9f619.x1a2a7pz.x1lku1pv.x87ps6o.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.xggy1nq.x1hl2dhg.x16tdsg8.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.x1ypdohk.x14e42zd.x1qhh985.x10w94by.x972fbf.xstzfhl.x1sy0etr.x18oe1m7.x1ejq31n.xjbqb8w.x1i10hfl > .x1r1pt67.x1qhmfi1.x1g0dm76.xpdmqnj.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.x5fzff1.xws8118.x1b1wa69.x14ldlfn.x1q0g3np.xozqiw3.x6s0dn4.xl56j7k.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z > .x1e0frkt.xwyz465.x14ayic.xl56j7k.x78zum5.x6s0dn4.x1c1uobl.x18d9i69.xyri2b.xexx8yu.xat24cr.xdj266r.html-div > div.xb9jzoj.xsqbvy7.x2lah0s.x78zum5.x6s0dn4.xeuugli.x193iq5w.x1ja2u2z.x1n2onr6.x9f619:nth-of-type(1)
+www.facebook.com##a.xa6wxux.x1qpxxdj.xwib8y2.x1y1aw1k.x6s0dn4.x1ja2u2z.x16tdsg8.x1n2onr6.x1a16bkn.x8e7100.xfvfia3.x1i6fsjq.x2lah0s.x1q0g3np.x78zum5.x1ypdohk.x9f619.xjyslct.x1a2a7pz.x1lku1pv.x87ps6o.xo1y3bh.x140muxe.xu25z0z.x1fmog5m.xggy1nq.x1hl2dhg.x3ct3a4.x14e42zd.x1qhh985.x10w94by.x972fbf.xstzfhl.x1sy0etr.x18oe1m7.x1ejq31n.xjbqb8w.x1i10hfl:nth-of-type(8)
+facebook.com##span:has(> b:last-child)::after
+
+! 2 Mar 2026 https://www.khanacademy.org
+www.khanacademy.org##._1fwfssc
+www.khanacademy.org##._wojw3z
+www.khanacademy.org##._mq6t18n
+
+! 2 Mar 2026 https://msoe.instructure.com
+msoe.instructure.com/grades##tr:nth-of-type(3)
+
+! 2 Mar 2026 https://gemini.google.com
+gemini.google.com##intent-card.ng-star-inserted.ng-trigger-fadeIn.ng-trigger.ng-tns-c3818145681-10:nth-of-type(1) > .card-zero-state.card.mat-ripple
+gemini.google.com##intent-card.ng-star-inserted.ng-trigger-fadeIn.ng-trigger.ng-tns-c3818145681-10:nth-of-type(2) > .card-zero-state.card.mat-ripple
+
+! 2 Mar 2026 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##.i2sf5 > .dKE98.prYS5._9bqq3.qrOqf._2J3an.rpAHE
+tabs.ultimate-guitar.com##._2q6fK
+tabs.ultimate-guitar.com##.Jxd0a
+tabs.ultimate-guitar.com##section:nth-of-type(6)
+tabs.ultimate-guitar.com##section:nth-of-type(5) > a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(2)
+tabs.ultimate-guitar.com##.OagIR._5oowA.f_LPY.dqN5b.T7AU4._6WKRY.buTwg.GZm7j
+tabs.ultimate-guitar.com##a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(6)
+tabs.ultimate-guitar.com##.bz1gI
+tabs.ultimate-guitar.com##.GPCdY.aRHmc.qrOqf._2J3an.rpAHE
+
+! 2 Mar 2026 https://www.ultimate-guitar.com
+www.ultimate-guitar.com##.GPCdY.aRHmc.qrOqf._2J3an.rpAHE
+www.ultimate-guitar.com##a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(6)
+www.ultimate-guitar.com##section:nth-of-type(5) > a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(2)
+www.ultimate-guitar.com##section:nth-of-type(6)
+www.ultimate-guitar.com##.R-9gw.fLKOx._1wcJA.XDXx5
+www.ultimate-guitar.com##.OagIR._5oowA.f_LPY.dqN5b.T7AU4._6WKRY.buTwg.GZm7j
+www.ultimate-guitar.com##.wa-ja.zB9pX._6gTBE.MTelo.ybpkg.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-
+
+! 3 Mar 2026 https://www.seedr.cc
+www.seedr.cc###subscription-menu-item
+www.seedr.cc##.text
+
+! 4 Mar 2026 https://decrypt.day
+decrypt.day##.c-xjvcwg.note
