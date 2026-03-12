@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.0
+! Version: 1.2
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1499,3 +1499,19 @@ www.nitrotype.com##.link--bare.link.goldTeaser
 ||www.nitrotype.com/cars/oneace_small.png$image
 ||www.nitrotype.com/dist/site/images/seasons/nitro-arcade-vol-3/teaser.png$image
 ||www.nitrotype.com/dist/site/images/seasons/*/*bg*.jpg$image
+
+! 5 Mar 2026 https://www.reddit.com
+www.reddit.com##advertise-button > .contents.nd\:visible > .contents.nd\:visible > .inline-flex.button.justify-center.items-center.icon.button-plain.px-\[calc\(var\(--rem12\)-var\(--button-border-width\,0px\)\)\].button-medium
+
+! 6 Mar 2026 https://msoe.instructure.com
+msoe.instructure.com##.account_notification.ic-notification--info.ic-notification--admin-created.ic-notification
+
+! 7 Mar 2026 https://f-droid.org
+f-droid.org##.banner--name__keepandroidopen.banner--danger.banner
+
+! 9 Mar 2026 https://www.msoe.edu
+www.msoe.edu##div.theme_dark.mini_callout > .mini_callout_body > .mini_callout_link > .mini_callout_link_icon > .symbol_caret_right.symbol
+www.msoe.edu##.footer_nav_lg.footer_nav > .footer_nav_list > div.footer_nav_item:nth-of-type(5) > .footer_nav_link
+
+! 10 Mar 2026 https://pressbooks.palni.org
+pressbooks.palni.org##.reading-header__end-container > [href="https://pressbooks.palni.org/writingfordigitalmedia/buy/"]
