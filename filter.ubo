@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.3
+! Version: 1.4
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1540,3 +1540,10 @@ www.ultimate-guitar.com##section:nth-of-type(5) > a.wa-ja.dqN5b._6gTBE.T7AU4._6W
 macosicons.com##.-top-4.-translate-x-1\/2.left-1\/2.min-h-\[64px\].absolute.max-w-\[450px\].px-8.mx-auto.max-w-4xl.w-full
 macosicons.com##.bsa-sticky-ad
 macosicons.com##.lg\:flex.hidden.gap-3.justify-center.items-center.-translate-x-1\/2.transform.left-1\/2.absolute
+
+! 12 Mar 2026 https://www.canva.com
+www.canva.com##._5lYgfw._3FvZZg.aqbYPg.j34Zww._4_iekA.Z3nT2A.MCgm0w._8ERLTg.VgvqkQ.LQzFZw._5KtATA
+
+! 12 Mar 2026 https://gamma.app
+gamma.app##.css-bp1sqy.chakra-alert
+gamma.app##.css-sygm5t
