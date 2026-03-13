@@ -1547,3 +1547,21 @@ www.canva.com##._5lYgfw._3FvZZg.aqbYPg.j34Zww._4_iekA.Z3nT2A.MCgm0w._8ERLTg.Vgvq
 ! 12 Mar 2026 https://gamma.app
 gamma.app##.css-bp1sqy.chakra-alert
 gamma.app##.css-sygm5t
+
+! 12 Mar 2026 https://bsky.app
+bsky.app##.radix-popover-content
+bsky.app##.r-2llsf.css-g5y9jx > div.css-g5y9jx:nth-of-type(1) > div.css-g5y9jx:nth-of-type(2) > .css-g5y9jx
+bsky.app##.r-2llsf.css-g5y9jx > div.css-g5y9jx:nth-of-type(1) > div.css-g5y9jx:nth-of-type(2)
+
+! 12 Mar 2026 https://dzen.ru
+dzen.ru##.h2WVhaUES0GXf3Ab0hltIius-app__widget-1r
+
+! 12 Mar 2026 https://www.1jkx.com
+www.1jkx.com##div.fluid-widget.container:nth-of-type(3)
+||www.1jkx.com/wp-content/uploads/2024/08/20240818101737548-%E7%BD%91%E7%AB%99%E5%8F%B3%E4%BE%A7%E4%BA%8C%E7%BB%B4%E7%A0%81.png$image
+
+! 12 Mar 2026 https://url20.ctfile.com
+url20.ctfile.com##.flex-row.d-flex.p-3.card-body
+
+ogs.google.com##a[aria-label="Manage your Google Account"] .WkuXae:not(:first-child)
+ogs.google.com##a[aria-label="Manage your Google Account"] .WkuXae:first-child:style(margin-top: 15px !important;)
