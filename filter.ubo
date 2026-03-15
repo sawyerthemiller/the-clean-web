@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.5
+! Version: 1.6
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1565,3 +1565,6 @@ url20.ctfile.com##.flex-row.d-flex.p-3.card-body
 
 ogs.google.com##a[aria-label="Manage your Google Account"] .WkuXae:not(:first-child)
 ogs.google.com##a[aria-label="Manage your Google Account"] .WkuXae:first-child:style(margin-top: 15px !important;)
+
+! 15 Mar 2026 https://www.reddit.com
+www.reddit.com##.flair > .border-neutral-border-weak.border.border-solid.text-secondary.leading-4.rounded-5.px-\[6px\].box-border.align-text-bottom.font-normal.text-12.max-w-full.truncate.inline-block.bg-tone-4
