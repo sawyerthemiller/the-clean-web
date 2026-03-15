@@ -1589,4 +1589,4 @@ premid.app##div:nth-of-type(2) > .space-y-2 > li:nth-of-type(3)
 premid.app##.text-gray-400.text-sm.gap-2.items-center.flex
 premid.app##.mb-8.gap-4.flex-wrap.flex > .disabled\:to-gray-600.disabled\:from-gray-600.focus\:ring-amber-500.hover\:brightness-110.text-white.to-orange-500.from-amber-500.bg-gradient-to-r.text-lg.py-4.px-8.gap-2.focus\:ring-offset-dark-400.focus\:ring-offset-1.focus\:ring-2.outline-none.focus\:outline-none.ease-in-out.duration-200.transition-all.relative.rounded-lg.font-medium.justify-center.items-center.inline-flex
 premid.app##a.text-sm.transition-colors.hover\:text-white.text-gray-400:nth-of-type(4)
-
+premid.app##.mx-auto.max-w-2xl.text-gray-500.text-base
