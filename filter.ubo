@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.6
+! Version: 1.7
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1590,3 +1590,25 @@ premid.app##.text-gray-400.text-sm.gap-2.items-center.flex
 premid.app##.mb-8.gap-4.flex-wrap.flex > .disabled\:to-gray-600.disabled\:from-gray-600.focus\:ring-amber-500.hover\:brightness-110.text-white.to-orange-500.from-amber-500.bg-gradient-to-r.text-lg.py-4.px-8.gap-2.focus\:ring-offset-dark-400.focus\:ring-offset-1.focus\:ring-2.outline-none.focus\:outline-none.ease-in-out.duration-200.transition-all.relative.rounded-lg.font-medium.justify-center.items-center.inline-flex
 premid.app##a.text-sm.transition-colors.hover\:text-white.text-gray-400:nth-of-type(4)
 premid.app##.mx-auto.max-w-2xl.text-gray-500.text-base
+
+! 15 Mar 2026 https://kemono.cr
+kemono.cr##aside > div
+kemono.cr##.jumbo-welcome-credits
+kemono.cr##._section_keyValue_638e7a2._section_38f13aa
+
+! 15 Mar 2026 https://www.facebook.com
+www.facebook.com##div.x1lliihq:nth-of-type(6) > div > span > .x1lliihq > div > .xod5an3.x1ja2u2z.xh8yej3.x1n2onr6 > .x1ja2u2z.x1n2onr6 > div > div > .x1a2a7pz > .xdt5ytf.x78zum5 > .x1ja2u2z.x1n2onr6.x9f619 > .xh8yej3.x1n2onr6.x78zum5.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div > .xquyuld.x10wlt62.x6ikm8r.xh8yej3.x9f619.xau1kf4.x1vsv7so.x1dmpuos.xw5cjc7.x1jx94hy.x1ja2u2z.x1n2onr6
+www.facebook.com##.x1yztbdb > .xh8yej3.x1n2onr6.x78zum5.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div > .xquyuld.x10wlt62.x6ikm8r.xh8yej3.x9f619.xau1kf4.x1vsv7so.x1dmpuos.xw5cjc7.x1jx94hy.x1ja2u2z.x1n2onr6
+www.facebook.com##.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6 > .xl56j7k.x2lwn1j.x1iyjqo2.xdt5ytf.x78zum5.x1ja2u2z.x1n2onr6.x9f619
+www.facebook.com##div.x1lliihq:nth-of-type(3) > div > span > .x1lliihq > div > .xod5an3.x1ja2u2z.xh8yej3.x1n2onr6 > .x1ja2u2z.x1n2onr6 > div > div > .x1a2a7pz > .xdt5ytf.x78zum5 > .x1ja2u2z.x1n2onr6.x9f619 > .xh8yej3.x1n2onr6.x78zum5.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div > .xquyuld.x10wlt62.x6ikm8r.xh8yej3.x9f619.xau1kf4.x1vsv7so.x1dmpuos.xw5cjc7.x1jx94hy.x1ja2u2z.x1n2onr6
+www.facebook.com##div.xb9jzoj.xsqbvy7.x2lah0s.x78zum5.x6s0dn4.xeuugli.x193iq5w.x1ja2u2z.x1n2onr6.x9f619 > .xep6ejk.x1b0d499
+www.facebook.com##.xmzvs34.xwib8y2.xf159sx.x1y1aw1k.x1iofjn4.x1iyjqo2.xdt5ytf.x78zum5.x9f619.x15x8krk.xde0f50.x1jx94hy.x1lziwak.xat24cr.x14z9mp.xdj266r.html-div
+www.facebook.com##b.x1s688f.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-b:nth-of-type(3) > span > .x1s688f.xzsf02u.x1sur9pj.xkrqix3.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.xt0psk2.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.xstzfhl.x1sy0etr.x18oe1m7.x1ejq31n.xjbqb8w.x1i10hfl
+
+ogs.google.com##li.j1ei8c:has(span[data-text="Google Fi Wireless"])
+ogs.google.com##li.j1ei8c:has(span[data-text="YouTube Music"])
+ogs.google.com##li.j1ei8c:has(span[data-text="Tasks"])
+ogs.google.com##li.j1ei8c:has(span[data-text="Finance"])
+ogs.google.com##li.j1ei8c:has(span[data-text="Google Analytics"])
+ogs.google.com##li.j1ei8c:has(span[data-text="Vids"])
+ogs.google.com##li.j1ei8c:has(span[data-text="Meet"])
