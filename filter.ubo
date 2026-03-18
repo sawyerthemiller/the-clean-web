@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.7
+! Version: 1.8
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1614,3 +1614,41 @@ ogs.google.com##li.j1ei8c:has(span[data-text="Vids"])
 ogs.google.com##li.j1ei8c:has(span[data-text="Meet"])
 ogs.google.com##li.j1ei8c:has(span[data-text="Shopping"])
 ogs.google.com##li.j1ei8c:has(span[data-text="Business Profile Manager"])
+
+! 15 Mar 2026 https://www.midi-karaoke.info
+www.midi-karaoke.info##td:nth-of-type(3)
+
+! 15 Mar 2026 https://comicbook.com
+comicbook.com##.wp-block-group-is-layout-flow.is-layout-flow.wp-elements-463329da3db2129e344cecdf3c23f08b.has-link-color.has-background.has-text-color.has-primary-dark-background-color.has-white-color.comicbook-cta-newsletter-wrap.wp-block-group
+
+! 15 Mar 2026 https://www.ultimate-guitar.com
+www.ultimate-guitar.com##div._egms:nth-of-type(10)
+
+! 15 Mar 2026 https://x.com
+||abs-0.twimg.com/emoji/v2/svg/*.svg$image
+x.com##span.r-poiln3.r-qvutc0.r-1ttztb7.r-bcqeeo.css-1jxf684:nth-of-type(3)
+
+! 16 Mar 2026 https://www.vaporhatch.com
+www.vaporhatch.com###shopify-section-sections--21715319783720__announcement_bar_bKfn6z > .utility-bar--bottom-border.gradient.color-background-1.utility-bar
+
+! 17 Mar 2026 https://blog.csdn.net
+blog.csdn.net##.passport-login-container
+blog.csdn.net##.false.passport-login-tip-container
+
+! 17 Mar 2026 https://gitcode.com
+||cdn-static.gitcode.com/gitcode-quick-app-fe/points-card.gif$image
+gitcode.com##.csdn-card-button
+||cdn-static.gitcode.com/gitcode-quick-app-fe/points-card.gif$image
+
+! 17 Mar 2026 https://www.autodesk.com
+||app.ua.autodesk.com/universal-assistant/current/index.html?uhmParentUrl=https%3A%2F%2Fwww.autodesk.com%2Fsupport%2Ftechnical%2Farticle%2Fcaas%2Ftsarticles%2Fts%2F3nyGEwcd1O7G4PFWCFemcW.html&uhmParentDomain=https%3A%2F%2Fwww.autodesk.com&parentParams=%3Fmsockid%3D374a3d6d978067921d652b82962866d1&uhmParentReferrer=https%3A%2F%2Fwww.bing.com%2F&language=en_US&product=generic&pageTitle=Inventor+2019+Language+Packs&useCFPAuth=true&analyticsLogging=true&allowImproveExperience=true&showContextualPopUp=undefined&mcvisid=null$subdocument
+
+! 17 Mar 2026 https://www.tvguide.com
+www.tvguide.com##.c-whereToWatchStreamingProviderSummaryAd
+
+! 17 Mar 2026 https://www.nitrotype.com
+||www.nitrotype.com/dist/site/images/pages/homepage/images/nt-logo-bg.jpg$image
+||www.nitrotype.com/dist/site/images/pages/homepage/images/quote.jpg$image
+www.nitrotype.com##.home--testimonials
+www.nitrotype.com##.home--districts
+www.nitrotype.com##.home--safety
