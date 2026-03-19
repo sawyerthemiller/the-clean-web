@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.8
+! Version: 1.8.1
 
 ! Commit Message: i get knocked down and i get up again
 
@@ -1656,3 +1656,9 @@ www.nitrotype.com##.home--districts
 www.nitrotype.com##.home--safety
 
 drive.google.com##iframe[name="account"]
+
+! 18 Mar 2026 https://photos.google.com
+photos.google.com##.oKzLoc.FaAChf.xurAO.SMXix
+
+! 18 Mar 2026 https://macked.app
+macked.app###menu-item-25448 > [href="https://macked.app/advertise"]
