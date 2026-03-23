@@ -22,4 +22,4 @@ c. usage of the filter list is at your own risk, and some are personal aesthetic
 
 **recommended**
 
-[here](https://github.com/sawyerthemiller/netflix-comments-firefox) is a comments extension i made for netflix - expereince a youtube-like comments expereince on netflix 
+[here](https://github.com/sawyerthemiller/netflix-comments-firefox) is a comments extension i made for netflix - expereince a youtube-like comment expereince on netflix 
