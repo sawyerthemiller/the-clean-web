@@ -1745,3 +1745,61 @@ github.com##.color-bg-overlay.js-notice.tmp-p-4.tmp-mb-3.rounded-2.border
 
 ! 30 Mar 2026 https://ixdf.org
 ixdf.org##.cursor-pointer.bg-red-700.bg-red-500.text-white > .md\:grid-cols-\[minmax\(16px\,1fr\)_minmax\(0\,1024px\)_minmax\(16px\,1fr\)\].md\:grid.md\:px-0.px-16
+
+! 30 Mar 2026 https://support.github.com
+support.github.com##.rounded-1.mt-4.text-center.p-4.border.banner-prompt
+
+! 30 Mar 2026 https://www.ebay.com
+www.ebay.com##.s-feedback
+
+! 30 Mar 2026 https://msoe.instructure.com
+msoe.instructure.com##li.event:nth-of-type(2) > .recent_feedback_icon
+
+! 5 Apr 2026 https://dzen.ru
+dzen.ru##.adv-skeleton___main
+dzen.ru##a.dzen-layout--navigation-tab__tabWrapper-3L:nth-of-type(8)
+
+! 5 Apr 2026 https://card.discover.com
+card.discover.com##.at-overlay-bg
+card.discover.com##div.dmp-slide.show-placement:nth-of-type(1)
+
+! 5 Apr 2026 https://www.ebay.com
+www.ebay.com##.hp-xl2\:grid-cols-4.hp-xl\:grid-cols-3.hp-md\:grid-cols-2.hp-sm\:-mt-200.custom-page-grid-container.grid-cols-1.gap-y-450.gap-x-200.grid
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(2)
+www.ebay.com##.page-grid-container.live-event-video-carousel__container
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(3)
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(4)
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(5)
+www.ebay.com##.dp-popular-destinations-module-grow.dp-popular-destinations-module.md\:gap-200.gap-300.flex-col.flex.page-grid-container
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(7)
+www.ebay.com##.carousel__autoplay.carousel--slides.hp-xl2\:px-600.overflow-hidden.mx-auto.my-0.home-topp-carousel.dp-carousel-disable-mask.carousel
+www.ebay.com##.defaultGap.flex-col.flex > .hp-lg\:h-\[360px\]
+www.ebay.com##.bWFt.rWmL
+www.ebay.com##.KRgC.ItGy.EsJa
+www.ebay.com##aside#dp-module-id-undefined.page-grid-container:nth-of-type(1)
+www.ebay.com##.gap-200.flex-col.flex.dp-filtered-feed-module
+www.ebay.com##.md\:text-large2.text-large1.m-0.font-bold
+www.ebay.com##.vl-flyout-nav--branded-live.vl-flyout-nav--attention.vl-flyout-nav__no-sub.vl-flyout-nav__js-tab > .vl-flyout-nav__link-container
+www.ebay.com##.gf-legal
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(6)
+www.ebay.com##aside.home-item-carousel.page-grid-container.gap-200.flex-col.flex:nth-of-type(8)
+
+! 5 Apr 2026 https://onedrive.live.com
+onedrive.live.com##.od-QuotaBanner-upsell
+onedrive.live.com##.bannerGleam_7ff103ac.storageUpsellBanner_7ff103ac
+onedrive.live.com##.btnPremium_28037b6b.btnCommon_28037b6b
+
+! 6 Apr 2026 https://github.com
+github.com##.CopilotChatInputPartial-module__inputContainer__ULM7D
+
+! 6 Apr 2026 https://www.ebay.com
+www.ebay.com##.ux-textspans--BOLD.ux-textspans
+www.ebay.com##.ux-textspans--DEFAULT.ux-textspans
+www.ebay.com##div.app-conversation:nth-of-type(36) > .app-conversation__message-bubble
+www.ebay.com##div.app-conversation:nth-of-type(35) > .app-conversation__message-bubble__grey.app-conversation__message-bubble
+www.ebay.com##div.app-conversation:nth-of-type(33) > .app-conversation__message-bubble__grey.app-conversation__message-bubble
+
+! 8 Apr 2026 https://www.ebay.com
+www.ebay.com##.lightbox-dialog--mask-fade.lightbox-dialog
+www.ebay.com##.wuuC
+
