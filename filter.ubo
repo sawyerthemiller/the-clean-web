@@ -3,9 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.8.2
-
-! Commit Message: i get knocked down and i get up again
+! Version: 1.8.4
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -1803,3 +1801,15 @@ www.ebay.com##div.app-conversation:nth-of-type(33) > .app-conversation__message-
 www.ebay.com##.lightbox-dialog--mask-fade.lightbox-dialog
 www.ebay.com##.wuuC
 
+! 9 Apr 2026 https://www.linkedin.com
+www.linkedin.com##.e5141296._2d6f95e1.d4c70152._498a4c71
+www.linkedin.com##._2a01c2f9._9b65fd64.e5141296._37044287._4d988212._0bcd92f9
+www.linkedin.com##.ab80b194 > ._7b448cd1._2919a8c5.b9eea93f.c62ac386._9c671e5c._37450d84._792e6fc3._6abe527e.db728984._7bf17752._9892395a
+www.linkedin.com##div._2a01c2f9._9b65fd64.e5141296._41fc4bca._6ff72822.f4a375cb._1975f98e._6c67fe9b._97736ce7._9535d8df._1185e65a._3084d530._6fe1ab09:nth-of-type(2)
+www.linkedin.com##._26703276._8b36bff3.e83ca3c4.fc7bd36e._3028a818._8ac1d4f6._7b448cd1 > ._7b448cd1._2919a8c5.b9eea93f.c62ac386._9c671e5c._37450d84._792e6fc3._6abe527e.db728984._7bf17752.be4d32a6.f84132c3.b5b54b14 > .f41e95b6._6f9c49ea._97736ce7.bed137af._57008627._8682a7d0.c1cec78b._9ca64429 > .e171a952._6f9c49ea.f41e95b6._656c232d.e90279c7
+www.linkedin.com##.cfd480a0._2f4516bd._9c671e5c._2a01c2f9._08d9f14a.aadeaaf6.a15de3bf._717bbb84.b003862a._98c88467.adceb28c.b9eea93f._47add8e0.c62ac386._804e77c4._42d3813b > ._3b9beb30._7fe31b02._071212ce._2ff7e910._2fc2b5c7._32f1009e._2ee552cb.b4d5fcba.a88bf9b2._021543aa._98c88467.adceb28c.ba0800da._2edba45b.aadeaaf6._47add8e0.c62ac386._08d9f14a.bed137af.b468cf19._6b4cb53d
+www.linkedin.com##.cfd480a0._2f4516bd._71648d5f.b5b54b14._0dc33fb1
+www.linkedin.com##.afd631ad.fc092411._9f46d8a5.c7630535._97736ce7._57008627._8682a7d0.c1cec78b._9ca64429
+www.linkedin.com##.ae2f791b._0a1b9894
+www.linkedin.com##._97736ce7.a1d969f7._3a5717b5._23f9d49f._8b36bff3.e83ca3c4.fc7bd36e._3028a818._465083ae._7b448cd1._83a60f57.da864840._55e8acb4.eb210de1.d75bc312.f15e48b9._970a8ab2._4757e4b6._7aa20bd0.ad67fda5.afd0a480
+www.linkedin.com##._26703276._8b36bff3.e83ca3c4.fc7bd36e._3028a818._8ac1d4f6._7b448cd1 > ._7b448cd1._2919a8c5.b9eea93f.c62ac386._9c671e5c._37450d84._792e6fc3._6abe527e.db728984._7bf17752.be4d32a6.f84132c3.b5b54b14
