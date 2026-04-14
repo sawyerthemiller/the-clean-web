@@ -435,7 +435,6 @@ youtube.com##.yt-spec-avatar-shape__image-overlays.yt-spec-avatar-shape__image
 youtube.com##.ghost-grid.style-scope.ytd-ghost-grid-renderer
 youtube.com##.yt-lockup-metadata-view-model-wiz__avatar
 youtube.com##.style-scope.ytd-structured-description-content-renderer
-youtube.com##.ytp-button.ytp-settings-button.ytp-hd-quality-badge
 youtube.com##.yt-spec-avatar-shape--live-ring
 youtube.com##.ytp-paid-content-overlay-link
 youtube.com##div[style="width: 100%; height: 100%; fill: currentcolor;"]
@@ -536,6 +535,14 @@ youtube.com##.style-scope ytd-merch-shelf-renderer
 ##.Image-sc-1u215sg-3
 chatgpt.com##.hidden.lg\:block
 youtube.com##.yt-core-attributed-string--inline-block-mod
+youtube.com#$#button.ytp-hd-quality-badge::after { display: none !important; }
+doxy.me##.css-1jj07fx
+doxy.me##.css-qfdzwe
+doxy.me###_r_v_
+doxy.me##.MuiPopper-root.MuiTooltip-popper.MuiTooltip-popperInteractive.MuiTooltip-popperArrow.css-gjteqd
+msoe365-my.sharepoint.com##.icon_90971f20.css-242.beforeSignal_8931be5c.newSignal_8931be5c.newSignalFixed_8931be5c
+gemini.google.com##.mat-mdc-list-item-meta.mdc-list-item__end.xap-count-badge-dot.ng-star-inserted
+youtube.com##.ytp-button.ytp-settings-button.ytp-hd-quality-badge::after
 
 ! 13 Dec 2025 https://macserialjunkie.com
 macserialjunkie.com###lights
@@ -1816,3 +1823,6 @@ www.linkedin.com##._26703276._8b36bff3.e83ca3c4.fc7bd36e._3028a818._8ac1d4f6._7b
 
 ! 10 Apr 2026 https://docs.google.com
 docs.google.com##.javascriptMaterialdesignGm3WizDialog-dialog--open.javascriptMaterialdesignGm3WizDialogUseStandardizedScrollbarStyles.javascriptMaterialdesignGm3WizDialog-dialog--no-content-padding.javascriptMaterialdesignGm3WizDialog-dialog--sheet.javascriptMaterialdesignGm3WizDialog-dialog
+
+! 10 Apr 2026 https://www.figma.com
+www.figma.com##.xbr870v.x127aom.xd3ty66.x1l90r2v.x8e5d8q.xexx8yu.xrxpjvj.x2i9t41
