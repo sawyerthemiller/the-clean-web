@@ -444,6 +444,7 @@ youtube.com###ellipsis
 youtube.com##[#ticket-shelf]
 youtube.com##.style-scope.ytd-reel-shelf-renderer
 youtube.com##.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap::after
+youtube.com##.yt-spec-button-shape-next.yt-spec-button-shape-next--text.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-only-default.yt-spec-button-shape-next--enable-backdrop-filter-experiment
 ||i.ytimg.com/an_webp/LKAKYluIHas/mqdefault_6s.webp?du=3000&sqp=COGT48QG&rs=AOn4CLCkdxXsW2tCEHnv4oGDMBzeaEcyyw
 youtube.com##.ytAnimatedThumbnailOverlayViewModelHost
 ||i.ytimg.com/an_webp/6oNBS_Ecf-Y/mqdefault_6s.webp?du=3000&sqp=CLaL48QG&rs=AOn4CLC3eB1RkQ1LFzCm8GBUdEQ5jjRuvw
@@ -543,6 +544,11 @@ doxy.me##.MuiPopper-root.MuiTooltip-popper.MuiTooltip-popperInteractive.MuiToolt
 msoe365-my.sharepoint.com##.icon_90971f20.css-242.beforeSignal_8931be5c.newSignal_8931be5c.newSignalFixed_8931be5c
 gemini.google.com##.mat-mdc-list-item-meta.mdc-list-item__end.xap-count-badge-dot.ng-star-inserted
 youtube.com##.ytp-button.ytp-settings-button.ytp-hd-quality-badge::after
+youtube.com##.ytSpecAvatarShapeImageOverlays.ytSpecAvatarShapeImage
+youtube.com##.ytLockupMetadataViewModelAvatar
+youtube.com##.style-scope.ytd-expandable-metadata-renderer
+youtube.com###channel-thumbnail
+youtube.com##.style-scope.ytd-channel-renderer
 
 ! 13 Dec 2025 https://macserialjunkie.com
 macserialjunkie.com###lights
