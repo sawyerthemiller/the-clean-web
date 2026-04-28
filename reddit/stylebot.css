@@ -193,3 +193,18 @@ h1.text-neutral-content-strong.m-0 {
 a.relative.pointer-events-auto.a.cursor-pointer.underline {
   text-decoration-line: none;
 }
+
+shreddit-subreddit-header-buttons.nd * {
+  color: buttons
+}
+
+p.m-0.text-body-2.text-neutral-content-weak,
+div.flex.items-baseline.justify-start {
+  opacity: 0.1;
+  transition: opacity 0.2s ease;
+}
+
+p.m-0.text-body-2.text-neutral-content-weak:hover,
+div.flex.items-baseline.justify-start:hover {
+  opacity: 1;
+}
