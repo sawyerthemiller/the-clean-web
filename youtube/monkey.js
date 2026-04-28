@@ -1,22 +1,25 @@
 // ==UserScript==
+//
 // @name         YT Redux Improver
 // @namespace    http://tampermonkey.net/
 // @version      1.3
-// @description  do what they won't...
+//
+// @description  Do what they won't...
+//
 // @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
 
-/* ==========================================================================
-   PART 1: Move Subscriptions to Top
-   ========================================================================== */
+/*  ==========================================================================
+    PART 1: Move Subscriptions to Top
+    ==========================================================================  */
 (function () {
     'use strict';
 
-    // Helpers
+    // helpers
     const findSectionsContainer = () => document.querySelector('#sections');
 
-    // Forgiving search for the subscriptions child: looks for the word "subscriptions" anywhere inside
+    // forgiving search for the subscriptions child so looks for the word "subscriptions" anywhere inside
     function findSubscriptionsChild(container) {
         const children = Array.from(container.children || []);
         for (let i = 0; i < children.length; i++) {
@@ -28,7 +31,7 @@
         return null;
     }
 
-    // Place node at index 'idx' inside container
+    // place node at index 'idx' inside container
     function placeNodeAtIndex(container, node, idx) {
         const children = Array.from(container.children || []);
         if (idx <= 0) {
@@ -44,7 +47,7 @@
         return idx;
     }
 
-    // Main logic - initial move once, then keep at desiredIndex
+    // main logic - initial move once, then keep at desiredIndex
     (async () => {
         let sections = null;
         let desiredIndex = null; // once set, we will keep Subscriptions at this index
@@ -58,38 +61,38 @@
 
             const { node: subNode, index: currentIndex } = find;
 
-            // If it's already at the desired index, do nothing.
+            // if it's already at the desired index, do nothing
             if (currentIndex === desiredIndex) return;
 
-            // Attempt to move it *to* the desiredIndex.
+            // attempt to move it to the desiredIndex
             const newIndex = placeNodeAtIndex(sections, subNode, desiredIndex);
             console.log(`[Tampermonkey] Adjusted "Subscriptions" from index ${currentIndex} -> ${newIndex}`);
         }
 
-        // When we detect mutations, we debounce and then either perform initial move or ensure locked position
+        // when we detect mutations, we debounce and then either perform initial move or ensure locked position
         function onMutations() {
             if (debounceTimer) clearTimeout(debounceTimer);
             debounceTimer = setTimeout(() => {
                 if (!sections) return;
 
-                // If desiredIndex is not yet set, try to perform the single move
+                // if desiredIndex is not yet set, try to perform the single move
                 if (desiredIndex === null) {
                     const found = findSubscriptionsChild(sections);
                     if (!found) return; // sidebar not ready yet
 
                     const { node: subNode, index: subIndex, children } = found;
 
-                    // If it's already last, we can't move down; lock its current index.
+                    // if it's already last, we can't move down so lock its current index
                     if (subIndex >= children.length - 1) {
                         desiredIndex = subIndex;
                         console.log('[Tampermonkey] Subscriptions is last; locking at current index', desiredIndex);
                         return;
                     }
 
-                    // Perform the single move down by one slot
+                    // perform the single move down by one slot
                     const targetIndex = subIndex + 1;
 
-                    // Insert subscriptions after the element currently at targetIndex (so we end up at targetIndex)
+                    // insert subscriptions after the element currently at targetIndex
                     const referenceElement = children[targetIndex];
                     sections.insertBefore(subNode, referenceElement.nextSibling);
                     desiredIndex = targetIndex; // lock this index
@@ -97,12 +100,12 @@
                     return;
                 }
 
-                // If desiredIndex is already set, ensure the node stays at that index
+                // if desiredIndex is already set, ensure the node stays at that index
                 doEnsurePosition();
             }, 150); // small debounce
         }
 
-        // Watch a given sections element
+        // watch a given sections element
         function bindObserverToSections(sectionsElement) {
             if (!sectionsElement) return null;
             sections = sectionsElement;
@@ -115,7 +118,7 @@
             return obs;
         }
 
-        // Observe the body for #sections replacements; rebind observer if replaced.
+        // observe the body for sections replacements then rebind observer if replaced
         let sectionsObserver = null;
         let bodyObserver = null;
 
@@ -151,12 +154,12 @@
             }
         }, 750);
 
-        // Also attempt a final ensure each few seconds for resilience
+        // also attempt a final ensure each few seconds for resilience
         const ensureInterval = setInterval(() => {
             if (desiredIndex !== null) doEnsurePosition();
         }, 3000);
 
-        // Cleanup on page unload
+        // cleanup on page unload
         window.addEventListener('beforeunload', () => {
             try { if (sectionsObserver) sectionsObserver.disconnect(); } catch (e) { }
             try { if (bodyObserver) bodyObserver.disconnect(); } catch (e) { }
@@ -165,13 +168,13 @@
     })();
 })();
 
-/* ==========================================================================
-   PART 2: Square Corners CSS
-   ========================================================================== */
+/*  ==========================================================================
+    PART 2: CSS Reverts
+    ==========================================================================  */
 (function () {
     'use strict';
 
-    // Inject CSS that overrides YouTube's rounded corners
+    // inject CSS
     const style = document.createElement('style');
     style.textContent = `
         .style-scope.tp-yt-paper-menu-button,
@@ -194,10 +197,18 @@
             border-radius: 0 !important;
         }
 
+        #chips *,
+
         span.yt-core-attributed-string,
         span.yt-icon-shape.ytSpecIconShapeHost,
         div.yt-spec-button-shape-next__icon {
             color: white;
+        }
+
+        #right-arrow-button,
+        #left-arrow-button {
+            position: relative;
+            bottom: 5px
         }
 
         #ticket-shelf {
@@ -212,49 +223,7 @@
         .ytThumbnailViewModelImage img {
             background: #000 !important;
         }
-    `;
-    document.head.appendChild(style);
-})();
 
-/* ==========================================================================
-   PART 3: Remove Shorts
-   ========================================================================== */
-(function () {
-    'use strict';
-
-    function removeShorts() {
-        const videos = document.querySelectorAll("ytd-video-renderer");
-
-        videos.forEach(v => {
-            const link = v.querySelector("a#thumbnail, a#video-title");
-            if (!link) return;
-
-            const href = link.getAttribute("href") || "";
-
-            // Shorts always use /shorts/ID
-            if (href.startsWith("/shorts/")) {
-                v.remove();
-            }
-        });
-    }
-
-    // initial run
-    removeShorts();
-
-    // dynamic page updates (YouTube SPA behavior)
-    const obs = new MutationObserver(removeShorts);
-    obs.observe(document.body, { childList: true, subtree: true });
-})();
-
-/* ==========================================================================
-   PART 4: Icon Tweaks
-   ========================================================================== */
-(function () {
-    'use strict';
-
-    const style = document.createElement('style');
-    style.textContent = `
-        /* shrink the notification bell */
         yt-animated-icon {
             transform: scale(0.8) !important;
             transform-origin: center center !important;
@@ -277,14 +246,44 @@
     document.head.appendChild(style);
 })();
 
-/* ==========================================================================
-   PART 5: General UI Tweaks (Meatball, Download, Save, REMOVE ADS)
-   ========================================================================== */
+/*  ==========================================================================
+    PART 3: Remove Shorts
+    ==========================================================================  */
+(function () {
+    'use strict';
+
+    function removeShorts() {
+        const videos = document.querySelectorAll("ytd-video-renderer");
+
+        videos.forEach(v => {
+            const link = v.querySelector("a#thumbnail, a#video-title");
+            if (!link) return;
+
+            const href = link.getAttribute("href") || "";
+
+            // shorts always use same links
+            if (href.startsWith("/shorts/")) {
+                v.remove();
+            }
+        });
+    }
+
+    // initial run
+    removeShorts();
+
+    // dynamic page updates
+    const obs = new MutationObserver(removeShorts);
+    obs.observe(document.body, { childList: true, subtree: true });
+})();
+
+/*  ==========================================================================
+    PART 4: General UI Tweaking
+    ==========================================================================  */
 (function () {
     'use strict';
 
     function applyTweaks() {
-        // --- TASK 1: Move Meatball Menu after Share ---
+        // --- move meatball menu after share ---
         const menuRenderer = document.querySelector('ytd-menu-renderer.ytd-watch-metadata');
         if (menuRenderer) {
             const meatballMenu = menuRenderer.querySelector('yt-button-shape#button-shape');
@@ -298,7 +297,7 @@
                 }
             }
 
-            // --- TASK 2: Fix Save Button Icon Margin ---
+            // --- fix save button icon margin ---
             const saveBtnInner = menuRenderer.querySelector('button[aria-label="Save to playlist"]');
             if (saveBtnInner) {
                 const saveIcon = saveBtnInner.querySelector('.yt-spec-button-shape-next__icon');
@@ -308,16 +307,16 @@
             }
         }
 
-        // --- TASK 3: Move Sidebar 4px to the Right ---
+        // --- move sidebar 4px to the right ---
         const secondaryColumn = document.getElementById('secondary');
         if (secondaryColumn) {
-            secondaryColumn.style.marginLeft = '6px';
+            secondaryColumn.style.marginLeft = '4px';
         }
 
-        // --- TASK 4: Hide Download Button ---
+        // --- hide download button ---
         const downloadSelectors = [
-            'ytd-download-button-renderer', // Main bar button
-            'ytd-menu-service-item-download-renderer', // The menu item wrapper
+            'ytd-download-button-renderer', // main bar button
+            'ytd-menu-service-item-download-renderer', // menu item wrapper
             '.ytd-menu-service-item-download-renderer'
         ];
 
@@ -330,20 +329,20 @@
             });
         });
 
-        // --- TASK 5: Hide "Remove ads" Button ---
+        // --- hide remove ads button ---
         const items = document.querySelectorAll('yt-list-item-view-model');
         items.forEach(item => {
-            // Check if it's already hidden to save performance
+            // check if it's already hidden to save performance
             if (item.style.display === 'none') return;
 
-            // Check if the text content matches "Remove ads"
+            // check if the text content matches
             if (item.textContent.trim().includes('Remove ads')) {
                 item.style.display = 'none';
             }
         });
     }
 
-    // Observer to handle dynamic loading
+    // observer to handle dynamic loading
     const observer = new MutationObserver((mutations) => {
         applyTweaks();
     });
@@ -353,18 +352,18 @@
         subtree: true
     });
 
-    // Initial run
+    // initial run
     applyTweaks();
 
 })();
 
-/* ==========================================================================
-   PART 6: Force Full Reload on Video Change
-   ========================================================================== */
+/*  ==========================================================================
+    PART 5: Force Full Reload on Video Change
+    ==========================================================================  */
 (function () {
     'use strict';
 
-    // Track the current video ID so we can detect changes
+    // track the current video ID so we can detect changes
     function getVideoId(url) {
         try {
             const u = new URL(url, location.origin);
