@@ -198,13 +198,31 @@ shreddit-subreddit-header-buttons.nd * {
   color: buttons
 }
 
+div.flex.min-h-0.min-w-0.flex-1.items-center.gap-xs,
 p.m-0.text-body-2.text-neutral-content-weak,
 div.flex.items-baseline.justify-start {
   opacity: 0.1;
   transition: opacity 0.2s ease;
 }
 
+div.flex.min-h-0.min-w-0.flex-1.items-center.gap-xs:hover,
 p.m-0.text-body-2.text-neutral-content-weak:hover,
 div.flex.items-baseline.justify-start:hover {
   opacity: 1;
+}
+
+
+div.w-full.shrink-0.items-center.justify-end.overflow-hidden {
+  border: 0px solid white;
+}
+
+div.items-center.gap-sm.bg-neutral-background.px-md.py-sm.box-border {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+a.flex.items-center.bg-neutral-background-weak.text-neutral-content {
+  width: 90%;
+  position: relative;
+  left: 10px;
 }
