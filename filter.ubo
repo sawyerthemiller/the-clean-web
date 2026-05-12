@@ -1957,3 +1957,20 @@ www.bing.com###sb_feedback_floating
 ! 8 May 2026 https://www.msn.com
 ##[aria-label="Open Copilot"]
 www.msn.com###AA1JBnC9
+
+! 8 May 2026 https://docs.google.com
+docs.google.com##.WithHideTransition.kixWizBarkickWrapper
+
+! 9 May 2026 https://msoe.instructure.com
+msoe.instructure.com##.css-1ja69b4-view--inlineBlock-baseButton
+
+! 9 May 2026 https://www.bing.com
+www.bing.com###rfVnOptIn
+
+! 11 May 2026 https://chatgpt.com
+chatgpt.com##.pointer-events-auto.dark-oled\:text-token-text-tertiary.text-token-text-secondary > div
+chatgpt.com##div.gap-1\.5.__menu-item.group:nth-of-type(3)
+
+! 12 May 2026 https://www.facebook.com
+www.facebook.com##.x1y1aw1k > div > div > div > div > .xyen2ro.x1uc6qws.x1n2onr6 > .x1y1aw1k.xwib8y2
+www.facebook.com##.x1y1aw1k > div > div > div > div > .xyen2ro.x1uc6qws.x1n2onr6 > .x1cnzs8.xjkvuk6.x193iq5w.x2lah0s.xdt5ytf.x78zum5.x9f619.x1ja2u2z.x1n2onr6
