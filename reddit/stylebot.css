@@ -226,3 +226,45 @@ a.flex.items-center.bg-neutral-background-weak.text-neutral-content {
   position: relative;
   left: 10px;
 }
+
+reddit-search-large.nd {
+  border-radius: 8px
+}
+
+div.flex-1.py-xs.flex.justify-stretch > * > * > * > * {
+  border-radius: 20px
+}
+
+comment-body-header {
+  background-color: transparent;
+}
+
+comment-body-header * {
+  border-radius: 20px;
+}
+
+shreddit-comments-sort-dropdown {
+  border-radius: 0px;
+  border: 0px solid black;
+  box-shadow: none;
+  padding: 0px;
+}
+
+shreddit-sort-dropdown {
+  margin-bottom: -2px;
+}
+
+faceplate-tooltip.inline-flex.items-center.text-brand-background.ps-2xs {
+  position: relative;
+  top: 2.5px;
+  left: 1px;
+}
+
+h2.inline-flex.items-center.m-0.text-headline.text-neutral-content-strong.font-bold.truncate {
+  opacity: 0.1;
+  transition: opacity 0.2s ease;
+}
+
+h2.inline-flex.items-center.m-0.text-headline.text-neutral-content-strong.font-bold.truncate:hover {
+  opacity: 1;
+}
