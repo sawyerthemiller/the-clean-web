@@ -3,7 +3,7 @@
 ! Expires: 12 hours
 ! Homepage: https://github.com/sawyerthemiller/the-clean-web
 
-! Version: 1.8.5
+! Version: 1.8.6
 
 ! 4 Jul 2025 https://t.17track.net
 ||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
@@ -2049,3 +2049,118 @@ tabs.ultimate-guitar.com##.Y557X.AiIpr.trcFj.RwM4f.Rtlga._PfpH.rpAHE
 tabs.ultimate-guitar.com##.PwHNb
 tabs.ultimate-guitar.com##div.Urus6:nth-of-type(4)
 tabs.ultimate-guitar.com##div.Urus6:nth-of-type(3)
+
+! 6 Jun 2026 https://en.wikipedia.org
+en.wikipedia.org###pt-sitesupport-2
+||en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en-25.svg$image
+
+! 6 Jun 2026 https://www.canva.com
+www.canva.com##.LuBWVA.fOwrSw.BMOCzQ.dark.theme.lwPdFQ.l9wW7g
+
+! 8 Jun 2026 https://gemini.google.com
+gemini.google.com##.ng-star-inserted.top-action-list > .ng-star-inserted.gds-sidenav-list.mdc-list.mat-mdc-list-base.mat-mdc-nav-list > gem-nav-list-item.ng-star-inserted > .ng-star-inserted.icon-button-badge-container > .ng-star-inserted.soft-badge-dot
+
+! 8 Jun 2026 https://www.myopenmath.com
+www.myopenmath.com###p4 > .noticetext
+
+! 8 Jun 2026 https://gemini.google.com
+gemini.google.com##.ng-star-inserted.top-action-list-scrollable.gds-sidenav-list.mdc-list.mat-mdc-list-base.mat-mdc-nav-list > gem-nav-list-item.ng-star-inserted > .ng-star-inserted.mdc-list-item--with-one-line.mat-mdc-list-item-single-line.lm-enabled.mat-mdc-list-item-both-leading-and-trailing.mdc-list-item--with-trailing-meta.mdc-list-item--with-leading-icon.mat-mdc-list-item-interactive.gmat-override.gem-nav-list-item.mat-mdc-tooltip-trigger.mdc-list-item.mat-mdc-list-item
+
+! 8 Jun 2026 https://www.myopenmath.com
+www.myopenmath.com###p7 > .noticetext
+www.myopenmath.com##.flexgroup > .noticetext
+
+! 10 Jun 2026 https://claude.ai
+claude.ai##.border-warning-200.bg-warning-900.pointer-events-auto.border-border-100.bg-bg-000.overflow-hidden.text-sm.p-2.shadow-md.border-0\.5.rounded-xl.max-w-lg
+
+! 10 Jun 2026 https://web.archive.org
+web.archive.org##.formdesign-psa.js-donate-banner
+
+! 11 Jun 2026 https://archive.org
+archive.org###donato
+
+! 11 Jun 2026 https://venice.ai
+venice.ai##.css-56s839.chakra-button
+venice.ai##.css-122fz3a
+
+! 13 Jun 2026 https://www.imdb.com
+www.imdb.com##.ipc-media__img.ipc-avatar__avatar-image.ipc-media--custom.ipc-media--base.ipc-media--circle-radius.ipc-image-media-ratio--avatar.ipc-media--avatar.ipc-media > .ipc-image
+www.imdb.com##.ipc-link__launch-icon.ipc-icon--inline.ipc-icon--launch-inline.ipc-icon
+www.imdb.com##div.ipc-focusable--constrained.ipc-focusable.ipc-lockup-overlay > .ipc-lockup-overlay__screen
+www.imdb.com##.ipc-sub-grid-item--span-2.ipc-sub-grid-item.ipc-poster--dynamic-width.ipc-poster--wl-true.ipc-poster--media-radius.ipc-poster--base.ipc-poster > .ipc-focusable--constrained.ipc-focusable.ipc-lockup-overlay > .ipc-lockup-overlay__screen
+www.imdb.com##.ipc-sub-grid-item--span-2.ipc-sub-grid-item.ipc-poster--dynamic-width.ipc-poster--wl-true.ipc-poster--media-radius.ipc-poster--base.ipc-poster > .ipc-focusable--constrained.ipc-focusable.ipc-lockup-overlay
+www.imdb.com##.ipc-media--fallback.ipc-poster__poster-image.ipc-media--poster-s.ipc-media--base.ipc-media--media-radius.ipc-image-media-ratio--poster-27x40.ipc-media--poster-27x40.ipc-media > .ipc-media__icon.ipc-icon--inline.ipc-icon--movie.ipc-icon > path
+www.imdb.com##.ipc-sub-grid-item--span-2.ipc-sub-grid-item.ipc-poster--dynamic-width.ipc-poster--wl-true.ipc-poster--media-radius.ipc-poster--baseAlt.ipc-poster > .ipc-focusable--constrained.ipc-focusable.ipc-lockup-overlay > .ipc-lockup-overlay__screen
+www.imdb.com##.ipc-sub-grid-item--span-2.ipc-sub-grid-item.ipc-poster--dynamic-width.ipc-poster--wl-true.ipc-poster--media-radius.ipc-poster--baseAlt.ipc-poster > .ipc-focusable--constrained.ipc-focusable.ipc-lockup-overlay
+www.imdb.com##.ipc-media--fallback.ipc-poster__poster-image.ipc-media--poster-m.ipc-media--baseAlt.ipc-media--media-radius.ipc-image-media-ratio--poster-27x40.ipc-media--poster-27x40.ipc-media > .ipc-media__icon.ipc-icon--inline.ipc-icon--movie.ipc-icon > path
+||m.media-amazon.com/images/M/MV5BMGRmYmIyZDktZGIzYi00ZDUyLTkxY2EtMTllNGNhZjVlMjhiXkEyXkFqcGc@._V1_QL75_UY*_.jpg$image
+
+! 14 Jun 2026 https://www.myopenmath.com
+www.myopenmath.com##.noticetext
+
+! 15 Jun 2026 http://leopardindustries.net:84
+leopardindustries.net##.fa-github.fab
+leopardindustries.net##.fa-discourse.fab
+leopardindustries.net##.fa-question-circle.fas
+leopardindustries.net##.fa-sign-in-alt.fas
+leopardindustries.net##.input-group-btn > .btn-default.btn
+leopardindustries.net##.text-red.fa-heart.fa
+
+! 15 Jun 2026 https://www.reddit.com
+www.reddit.com##.h-3xl.w-3xl.bg-category-spoiler.text-category-nsfw.overflow-hidden.rounded-full > path
+
+! 15 Jun 2026 http://leopardindustries.net:84
+leopardindustries.net##.fa-trash-alt.far
+
+! 15 Jun 2026 https://github.com
+github.com##.tmp-mb-5.feed-right-sidebar > div > .marketing-banner.js-notice
+
+! 16 Jun 2026 https://www.ultimate-guitar.com
+www.ultimate-guitar.com##section:nth-of-type(4) > a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(2)
+www.ultimate-guitar.com##section:nth-of-type(4) > a.wa-ja.dqN5b._6gTBE.T7AU4._6WKRY.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(4)
+www.ultimate-guitar.com##section:nth-of-type(5)
+www.ultimate-guitar.com##a._016mC.rffnZ:nth-of-type(3)
+www.ultimate-guitar.com##a.wa-ja._6gTBE.MTelo.YZmIm.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(2)
+www.ultimate-guitar.com##a.wa-ja._6gTBE.MTelo.YZmIm.buTwg.o_U7b.rBqB6.R2aTZ.RIhpE.oc8O-:nth-of-type(6)
+
+! 16 Jun 2026 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##sup
+
+! 16 Jun 2026 https://adguard-dns.io
+adguard-dns.io##.header-list-item--flex-1-desktop.header-list-item
+
+! 16 Jun 2026 https://www.movieboxpro.app
+www.movieboxpro.app##.wrap
+
+! 16 Jun 2026 https://apps.sidelix.vip
+apps.sidelix.vip##.brand-icon
+
+! 16 Jun 2026 https://www.justanswer.com
+www.justanswer.com##.showModal.commentModal
+
+! 16 Jun 2026 https://magiskmodule.gitlab.io
+||magiskmodule.gitlab.io/img/icon.webp$image
+
+! 16 Jun 2026 https://drive.google.com
+drive.google.com###WWNEkf
+
+! 16 Jun 2026 https://www2.registerblast.com
+www2.registerblast.com##.t-consentPrompt.termly-styles-bottom-d26761.termly-styles-standard-b726f8.termly-styles-termly-banner-e1ed59.termly-styles-root-b0aebb
+
+! 16 Jun 2026 https://streamfree.app
+streamfree.app##.nav-notice-row
+streamfree.app##.hero-overlay
+
+! 16 Jun 2026 https://dlhd.pk
+dlhd.pk##.sidebar
+dlhd.pk##.is-marquee.upcoming-slider
+dlhd.pk###toggleChatBtn
+dlhd.pk##.theme-toggle
+
+! 16 Jun 2026 https://iptv.watchott.ru
+iptv.watchott.ru##button.filter-btn:nth-of-type(7)
+
+! 17 Jun 2026 https://www.instagram.com
+www.instagram.com##.x6bx242.x7vhb2i.x13vifvy.x1dr59a3
+www.instagram.com##span.x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span:nth-of-type(2) > .x78zum5.x6s0dn4.x1n2onr6 > ._a6hd.x4gyw5p.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.x3ct3a4.xt0psk2.x1ypdohk.x9f619.x14e42zd.x1qhh985.x10w94by.x972fbf.xstzfhl.x1sy0etr.x18oe1m7.x1ejq31n.xjbqb8w.x1i10hfl > .x159b3zp.x80pfx3.x1g0dm76.xsag5q8.xpdmqnj.xz9dl7a.x12dmmrz.x7nr27j.x6pnmvc.xo237n4.xjpr12u.xr9ek0c.x15x8krk.xde0f50.x5a5i1n.x1obq294.x3nfvp2.x9f619
+
