@@ -17,7 +17,7 @@ e. you must install the required font 'segoe ui supro'
 **warnings**
 
 using the pandora downloader function uses a backend php server for conversion which runs over (http) because pandora switched recently to mp4 files instead of mp3 to serve audio to clients...\
-??? how does it work then - it works by copying the media url out of the web request and giving it to the server to convert
+??? how does it work then - it works by copying the media url out of the web request invoked by your browser to pandora servers and giving it to the server to convert -- it NEVER stores any logs, media data, or anything, really
 
 a. the pandora one is now fully resizable so will probably no longer get updates due to relatively stable pandora DOM :)\
 b. the netflix one has been updated so please see the greasyfork link in the url file to view changes\
