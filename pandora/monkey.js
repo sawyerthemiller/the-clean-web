@@ -231,7 +231,7 @@ const ENCODER_URL = "http://leopardindustries.net/convert.php";
     const sharedBtnStyle = {
         position: 'fixed',
         bottom: '15px',
-        zIndex: '2147483646',
+        zIndex: '999',
         height: '40px',
         boxSizing: 'border-box',
         padding: '0 16px',
