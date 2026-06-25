@@ -2,16 +2,25 @@
 //
 // @name         Pandora VIA
 // @namespace    http://leopardindustries.net
-// @version      1.7
-// @description  Get the VIZIO TV UI on Pandora Web Player
+// @version      1.9.0
+//
+// @description  Get the VIZIO TV UI on Pandora Web Player (Server-Side Conversion)
+//
 // @icon         https://images.icon-icons.com/17/PNG/256/Pandora_1992.png
 // @match        https://www.pandora.com/*
-// @grant        none
 //
+// @grant        GM_xmlhttpRequest
+//
+// @connect      p-cdn.us
+// @connect      pandora.com
+// @connect      * //
 // @updateURL    https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/monkey.js
 // @downloadURL  https://raw.githubusercontent.com/sawyerthemiller/the-clean-web/refs/heads/main/pandora/monkey.js
 //
 // ==/UserScript==
+
+// PHP server backend
+const ENCODER_URL = "http://leopardindustries.net/convert.php";
 
 (function () {
     'use strict';
@@ -109,25 +118,189 @@
 
 })();
 
+// --- FS AND NEW URL BUTTON COMPONENT ---
 (function () {
     'use strict';
 
-    const fsBtn = document.createElement('button');
-    fsBtn.textContent = 'FS';
-    Object.assign(fsBtn.style, {
+    let latestCapturedUrl = '';
+    let isConverting = false;
+    let overlayEl = null;
+
+    // Only accept actual http/https links pointing to pandora audio endpoints
+    function isValidAudioUrl(url) {
+        if (typeof url !== 'string') return false;
+        if (!url.startsWith('http')) return false;
+        return url.includes('/access/?') && (url.includes('p-cdn.us') || url.includes('pandora.com'));
+    }
+
+    const iconWhite = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24'%3E%3Cg fill='%23fff'%3E%3Cpath d='M13 2h-2v15.1l-7-4.4V15l8 5l8-5v-2.3l-7 4.4z'/%3E%3Cpath d='M4 22h16v2H4z' opacity='.5'/%3E%3C/g%3E%3C/svg%3E";
+
+    function setIconHtml() {
+        return `<img src="${iconWhite}" style="width:16px; height:16px; pointer-events:none;">`;
+    }
+
+    // Error modal logic
+    function showErrorModal(message) {
+        if (document.getElementById("metro-error-modal")) return;
+
+        const errorOverlay = document.createElement("div");
+        errorOverlay.id = "metro-error-modal";
+        errorOverlay.style.position = "fixed";
+        errorOverlay.style.inset = "0";
+        errorOverlay.style.background = "rgba(0,0,0,0.75)";
+        errorOverlay.style.display = "flex";
+        errorOverlay.style.alignItems = "center";
+        errorOverlay.style.justifyContent = "center";
+        errorOverlay.style.zIndex = "2147483647";
+
+        const modalBox = document.createElement("div");
+        modalBox.style.background = "#111";
+        modalBox.style.color = "#fff";
+        modalBox.style.padding = "15px";
+        modalBox.style.width = "420px";
+        modalBox.style.fontFamily = "Segoe UI Supro, sans-serif";
+        modalBox.style.borderLeft = "3px solid #00a2ed";
+
+        modalBox.innerHTML = `
+            <h2 style="margin: 0 0 15px 0;font-weight:300;">Download Error</h2>
+            <p style="margin: 0 0 15px 0; line-height: 1.4;">
+                ${message}
+            </p>
+            <div style="text-align:right;">
+                <button id="metro-error-close-btn"
+                    style="
+                        background: #00a2ed;
+                        border: none;
+                        color: #fff;
+                        padding: 8px 18px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;">
+                    OK
+                </button>
+            </div>
+        `;
+
+        errorOverlay.appendChild(modalBox);
+        document.body.appendChild(errorOverlay);
+
+        document.getElementById("metro-error-close-btn").onclick = () => {
+            errorOverlay.remove();
+        };
+    }
+
+    function showModal() {
+        if (overlayEl) return;
+        overlayEl = document.createElement('div');
+        Object.assign(overlayEl.style, {
+            position: 'fixed',
+            inset: '0',
+            background: 'rgba(0, 0, 0, 0.75)',
+            zIndex: '2147483647',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+        });
+
+        const modalBox = document.createElement('div');
+        Object.assign(modalBox.style, {
+            background: 'black',
+            border: '1px solid white',
+            borderRadius: '0px',
+            padding: '25px 30px',
+            color: 'white',
+            fontFamily: 'Arial, sans-serif',
+            fontSize: '16px',
+            textAlign: 'center',
+            maxWidth: '400px',
+            lineHeight: '1.5'
+        });
+        modalBox.textContent = 'Server is currently fetching and re encoding the stream... Please wait...';
+
+        overlayEl.appendChild(modalBox);
+        document.body.appendChild(overlayEl);
+    }
+
+    function hideModal() {
+        if (overlayEl) {
+            overlayEl.remove();
+            overlayEl = null;
+        }
+    }
+
+    const sharedBtnStyle = {
         position: 'fixed',
         bottom: '15px',
-        right: '20px',
-        zIndex: '999999',
-        padding: '10px 16px',
+        zIndex: '2147483646',
+        height: '40px',
+        boxSizing: 'border-box',
+        padding: '0 16px',
         fontSize: '14px',
         fontWeight: 'bold',
-        cursor: 'pointer',
         background: 'linear-gradient( to bottom, #2b2b2b 0%, #2b2b2b 50%, #0f0f0f 50%, #0f0f0f 100% )',
         color: 'white',
         border: '2px solid white',
-        borderRadius: '0px'
-    });
+        borderRadius: '0px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        pointerEvents: 'auto'
+    };
+
+    function updateUrlButton(newUrl) {
+        latestCapturedUrl = newUrl;
+        if (!isConverting) {
+            urlBtn.style.color = 'white';
+            urlBtn.style.cursor = 'pointer';
+            urlBtn.innerHTML = setIconHtml();
+            urlBtn.title = 'Download This Song';
+        }
+    }
+
+    setInterval(() => {
+        document.querySelectorAll('audio').forEach(audio => {
+            if (isValidAudioUrl(audio.src) && audio.src !== latestCapturedUrl) {
+                updateUrlButton(audio.src);
+            }
+        });
+    }, 2000);
+
+    const originalFetch = window.fetch;
+    window.fetch = async function(...args) {
+        const url = typeof args[0] === 'string' ? args[0] : (args[0] && args[0].url ? args[0].url : '');
+        if (isValidAudioUrl(url)) {
+            updateUrlButton(url);
+        }
+        return originalFetch.apply(this, args);
+    };
+
+    const originalXhrOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+        if (isValidAudioUrl(url)) {
+            updateUrlButton(url);
+        }
+        return originalXhrOpen.call(this, method, url, ...rest);
+    };
+
+    const originalMediaSrc = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'src');
+    if (originalMediaSrc && originalMediaSrc.set) {
+        Object.defineProperty(HTMLMediaElement.prototype, 'src', {
+            set: function(val) {
+                if (isValidAudioUrl(val)) {
+                    updateUrlButton(val);
+                }
+                return originalMediaSrc.set.call(this, val);
+            },
+            get: originalMediaSrc.get
+        });
+    }
+
+    // FS Button Creation
+    const fsBtn = document.createElement('button');
+    fsBtn.textContent = 'FS';
+    Object.assign(fsBtn.style, sharedBtnStyle);
+    fsBtn.style.right = '20px';
+    fsBtn.style.cursor = 'pointer';
 
     document.body.appendChild(fsBtn);
 
@@ -139,9 +312,97 @@
         }
     });
 
+    // MP3 Download Button Creation
+    const urlBtn = document.createElement('button');
+    urlBtn.innerHTML = setIconHtml();
+    Object.assign(urlBtn.style, sharedBtnStyle);
+    urlBtn.style.right = '76px';
+    urlBtn.style.cursor = 'pointer';
+    urlBtn.style.minWidth = '46px';
+    urlBtn.style.transition = 'color 0.2s';
+
+    document.body.appendChild(urlBtn);
+
+    // Audio Conversion Logic
+    function convertToMp3AndDownload(url) {
+        isConverting = true;
+        urlBtn.textContent = 'ENC...';
+        urlBtn.style.color = '#4caf50';
+        urlBtn.style.cursor = 'wait';
+
+        showModal();
+
+        // Get track information to assemble name
+        const titleEl = document.querySelector('.Marquee__wrapper__content');
+        const artistEl = document.querySelector('.NowPlayingTopInfo__current__artistName');
+
+        let trackName = 'pandora track';
+
+        if (titleEl && artistEl) {
+            const titleRaw = titleEl.textContent.trim().toLowerCase().replace(/[^a-z0-9\s]/gi, '').replace(/\s+/g, ' ');
+            const artistRaw = artistEl.textContent.trim().toLowerCase().replace(/[^a-z0-9\s]/gi, '').replace(/\s+/g, ' ');
+            trackName = `${titleRaw} - ${artistRaw}`;
+        } else if (titleEl) {
+            trackName = titleEl.textContent.trim().toLowerCase().replace(/[^a-z0-9\s]/gi, '').replace(/\s+/g, ' ');
+        }
+        trackName = trackName.trim();
+
+        const targetServerUrl = `${ENCODER_URL}?url=${encodeURIComponent(url)}`;
+
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: targetServerUrl,
+            responseType: "blob",
+            onload: function(response) {
+                if (response.status >= 200 && response.status < 300) {
+                    const blob = response.response;
+                    const downloadUrl = URL.createObjectURL(blob);
+
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = downloadUrl;
+                    a.download = `${trackName} - 128 kbps.mp3`;
+                    document.body.appendChild(a);
+                    a.click();
+
+                    setTimeout(() => {
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(downloadUrl);
+                    }, 100);
+                } else {
+                    showErrorModal("The encoding server returned an error...");
+                }
+                resetUI();
+            },
+            onerror: function(err) {
+                console.error("Server Download Error - ", err);
+                showErrorModal("Failed to connect to the new PHP encoding server...");
+                resetUI();
+            }
+        });
+
+        function resetUI() {
+            isConverting = false;
+            hideModal();
+            urlBtn.innerHTML = setIconHtml();
+            urlBtn.style.color = 'white';
+            urlBtn.style.cursor = 'pointer';
+        }
+    }
+
+    urlBtn.addEventListener('click', () => {
+        if (!latestCapturedUrl) {
+            showErrorModal("No track detected yet!!!<br><br>Try pausing and playing the song, or skipping to the next one to capture the audio URL...");
+            return;
+        }
+        if (!isConverting) {
+            convertToMp3AndDownload(latestCapturedUrl);
+        }
+    });
+
 })();
 
-// --- APPS BAR + TOP-RIGHT PROFILE ---
+// --- APPS BAR AND TOP RIGHT PROFILE ---
 (() => {
     'use strict';
     const appsBarStyle = document.createElement('style');
@@ -220,7 +481,6 @@
     imgs.forEach((src, i) => {
         const img = document.createElement('img');
         img.src = src;
-        // CHANGED: '_self' to '_blank' to open in new tab
         if (i < links.length) img.addEventListener('click', () => window.open(links[i], '_blank'));
         else {
             img.addEventListener('click', () => {
@@ -354,7 +614,6 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
             const anchorRect = anchorEl.getBoundingClientRect();
 
             const top = anchorRect.bottom - parentRect.top - 15;
-
             const left = anchorRect.left - parentRect.left + 60;
 
             Object.assign(volumeEl.style, {
@@ -380,11 +639,8 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
 
             const placeElement = (el, referenceRectBottom) => {
                 if (!el.offsetParent) return referenceRectBottom;
-
                 const parentRect = el.offsetParent.getBoundingClientRect();
-
                 const top = referenceRectBottom - parentRect.top + 25;
-
                 const left = anchorRect.left - parentRect.left + 60;
 
                 el.style.setProperty('position', 'absolute', 'important');
@@ -505,7 +761,7 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
         modal.style.color = "#fff";
         modal.style.padding = "15px";
         modal.style.width = "420px";
-        modal.style.fontFamily = "Segoe UI Supro";
+        modal.style.fontFamily = "Segoe UI Supro, sans-serif";
         modal.style.borderLeft = "3px solid #00a2ed";
 
         modal.innerHTML = `
@@ -518,7 +774,7 @@ stillListeningObserver.observe(document.body, { childList: true, subtree: true }
                 <a href="https://github.com/sawyerthemiller/the-clean-web/tree/main/pandora"
                    target="_blank"
                    style="color: #00a2ed; text-decoration: none;">
-                   here
+                    here
                 </a>
             </p>
             <div style="text-align:right;">
