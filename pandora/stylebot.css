@@ -459,6 +459,10 @@ div.nowPlayingTopInfo__trackLoader {
   margin-top: 20px;
 }
 
+div.nowPlayingTopInfo__trackLoader > * {
+  animation: spin 0.4s linear infinite;
+}
+
 div.DiscoveryTuner.DiscoveryTuner--dark.DiscoveryTuner--modesClosed * {
   border-radius: 0px;
 }
@@ -503,4 +507,8 @@ ul.DropdownBox {
 div.Fillet__image {
   border-radius: 0px;
   border: 1px solid black
+}
+
+div.Initialization_failure_error {
+  display: none;
 }
