@@ -16,6 +16,8 @@ e. you must install the required font 'segoe ui supro'
 
 **warnings**
 
+using the pandora downloader function uses a backend php server for conversion which runs over (http) because pandora switched recently to mp4 files instead of mp3 to serve audio to clients...
+
 a. the pandora one is now fully resizable so will probably no longer get updates due to relatively stable pandora DOM :)\
 b. the netflix one has been updated so please see the greasyfork link in the url file to view changes\
 c. usage of the filter list is at your own risk, and some are personal aesthetical preferences by me which MAY break site interfaces
