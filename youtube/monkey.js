@@ -6,6 +6,7 @@
 //
 // @description  Do what they won't...
 //
+// @require      https://update.greasyfork.org/scripts/552301/1676024/Observe.js
 // @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
@@ -13,6 +14,15 @@
 /*  ==========================================================================
     PART 1: Move Subscriptions to Top
     ==========================================================================  */
+
+const { contextPrint, waitForElement, observeAndHandle } = window.userscript.com.tukars.Observe;
+
+const ENABLE_DEBUG_LOGGING = true;
+
+const { log, warn, error, info, debug } = contextPrint(
+    "YT Interruptions Remover", ENABLE_DEBUG_LOGGING
+);
+
 (function () {
     'use strict';
 
@@ -211,12 +221,25 @@
             bottom: 5px
         }
 
+        #vote-count-middle {
+            position: relative !important;
+            top: 5px !important;
+        }
+
+        [aria-label="Dislike this comment"] {
+            margin-bottom: -1px !important;
+        }
+
         #ticket-shelf {
             display: none !important;
         }
 
         .yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--enable-backdrop-filter-experiment {
             background-color: transparent !important;
+        }
+
+        .ytSpecButtonShapeNextText {
+            margin-top: 10px;
         }
 
         .ytThumbnailViewModelImage
@@ -422,4 +445,52 @@
             location.reload();
         }
     });
+})();
+/*  ==========================================================================
+    PART 6: Remove Interruptions Popup
+    ==========================================================================  */
+function destroyNotification(notification) {
+    if (!notification) {
+        error("Notification element does not exist! Cannot delete it!");
+        return;
+    }
+    if (!notification.parentNode) {
+        warn("Notification element already removed from the DOM.");
+        return;
+    }
+    debug("Destroying 'Interruptions' notification element.", notification);
+    notification.remove();
+    log("Successfully removed 'Interruptions' notification.");
+}
+
+async function handleInterruptionNotification(notification) {
+    debug("Detected a potential notification element:", notification);
+
+    const textElement = await waitForElement("#text", 2000, notification);
+
+    if (!textElement) {
+        debug("This notification does not have the expected text element. Ignoring.");
+        return;
+    }
+
+    debug(`Got text element. Text is: "${textElement.textContent}"`)
+
+    const textContent = textElement.textContent.trim();
+
+    if (textContent.includes("Experiencing interruptions?")) {
+        log("Found 'Experiencing interruptions?' notification. Removing it.");
+        destroyNotification(notification);
+    } else {
+        debug(`Notification text did not match. Text was: "${textContent}"`);
+        setTimeout(() => { debug(`Text after 300ms: "${textElement.textContent}"`) }, 300);
+    }
+}
+
+(async function () {
+    "use strict";
+    log("Interruptions remover is active.");
+
+    const popupContainer = await waitForElement("ytd-popup-container.style-scope.ytd-app");
+
+    observeAndHandle(popupContainer, "tp-yt-paper-toast", handleInterruptionNotification);
 })();
