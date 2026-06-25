@@ -136,7 +136,7 @@ const ENCODER_URL = "http://leopardindustries.net/convert.php";
     const iconWhite = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24'%3E%3Cg fill='%23fff'%3E%3Cpath d='M13 2h-2v15.1l-7-4.4V15l8 5l8-5v-2.3l-7 4.4z'/%3E%3Cpath d='M4 22h16v2H4z' opacity='.5'/%3E%3C/g%3E%3C/svg%3E";
 
     function setIconHtml() {
-        return `<img src="${iconWhite}" style="width:16px; height:16px; pointer-events:none;">`;
+        return `<img src="${iconWhite}" style="width:18px; height:18px; pointer-events:none;">`;
     }
 
     // Error modal logic
